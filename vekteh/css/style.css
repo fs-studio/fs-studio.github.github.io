@@ -30,10 +30,6 @@ a {
   font-size: 12px;
 }
 
-.wp-br:not(:last-child) {
-  margin-bottom: 15px;
-}
-
 .container {
   position: relative;
   width: 100%;
@@ -139,28 +135,10 @@ option:checked {
 }
 
 .complectation {
-  position: relative;
-}
-
-.complectation-back {
-  position: absolute;
-  right: 20px;
-  top: 10px;
+  position: fixed;
+  left: 0;
+  top: 0;
   z-index: 100;
-  color: #f2f2f2;
-  padding: 10px 15px;
-  background-color: #202020;
-  font-size: 1em;
-  cursor: pointer;
-  outline: none;
-  border: none;
-  border-radius: 5px;
-  box-shadow: 0px 4px 3px #242120;
-}
-
-.complectation-back:active {
-  transform: translateY(3px);
-  box-shadow: none;
 }
 
 .complectation-block {
@@ -173,9 +151,11 @@ option:checked {
   justify-content: center;
   -ms-align-items: center;
   align-items: center;
+  width: 75%;
+  height: 75%;
   background-color: #fff;
-  margin: 0 auto;
-  padding: 5% 0;
+  border-radius: 5px;
+  margin: 5% auto;
 }
 
 .complectation-block__img {
@@ -195,21 +175,10 @@ option:checked {
 
 .complectation-block__text_button {
   margin-bottom: 20px;
-  width: 50%;
-  text-align: center;
 }
 
 .complectation-block__text_button a {
   color: #f2f2f2;
-}
-
-.complectation-block__text_button1 {
-  text-align: left !important;
-  margin-top: 25px;
-}
-
-.complectation-block__text_button1:last-child {
-  margin-top: 50px;
 }
 
 .complectation-block__text_descr {
@@ -249,13 +218,6 @@ option:checked {
   -ms-align-items: center;
   align-items: center;
 }
-
-/*
-.header-menu_mob {
-  display: none;
-  margin: 15px 0;
-}
-*/
 
 .header-menu__hamburger {
   display: none;
@@ -318,7 +280,7 @@ option:checked {
   margin-right: 0.5em;
 }
 
-.menu-item a {
+.header-menu__item {
   display: block;
   text-align: center;
   padding: 10px 0.5em;
@@ -329,13 +291,13 @@ option:checked {
   transition: all 0.3s;
 }
 
-.current-menu-item a {
+.header-menu__item_active {
   background-color: #ffb700;
   border-radius: 10px;
   color: #202020;
 }
 
-.menu-item a:hover {
+.header-menu__item:hover {
   background-color: #ffb700;
   border-radius: 10px;
   color: #202020;
@@ -443,8 +405,7 @@ option:checked {
   text-shadow: 1px 1px 3px #000;
   text-align: center;
   position: relative;
-/*  z-index: 10;*/
-  margin-bottom: 2em;
+  margin-bottom: 0.5em;
 }
 
 .main-bg__subtitle {
@@ -756,7 +717,6 @@ option:checked {
   padding-bottom: 10px;
   background-color: #fff;
   color: #000;
-  border-radius: 5px;
   line-height: 1.5;
 }
 
@@ -768,7 +728,6 @@ option:checked {
 
 .main-technique__content .content-block__img img {
   max-width: 100%;
-  border-radius: 5px;
 }
 
 .main-technique__content .content-block__title {
@@ -809,9 +768,9 @@ option:checked {
 }
 
 .main-technique__content .content-block__buttons_call {
+  cursor: pointer;
   background-color: #ffb700;
   margin-bottom: 10px;
-  cursor: pointer;
 }
 
 .main-technique__content .content-block__buttons_picking {
@@ -966,7 +925,6 @@ option:checked {
 
 .main-assortment__sl .sl-slide img {
   max-width: 100%;
-  border-radius: 5px;
 /*
   margin: 0 auto 3% auto;
   cursor: pointer;
@@ -980,16 +938,20 @@ option:checked {
 }
 */
 
+/*
 .main-bgtelehandler .main-bg__title {
   margin-bottom: 50px;
 }
+*/
 
 /*Раздел "Телескопические погрузчики"*/
+/*
 .main-bgtelehandler {
   background: #373737 url(../img/telehandler-bg.jpg) 0 0 no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
 }
+*/
 
 /*Раздел "О нас"*/
 .main-about {
@@ -1251,16 +1213,6 @@ option:checked {
   .main-bg__cta a {
     font-size: 0.9em;
   }
-  .complectation-block {
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
-    -o-flex-direction: column;
-    flex-direction: column;
-  }
-  .complectation-block__img {
-    margin-right: 0;
-  }
 }
 
 @media screen and (max-width: 742px) {
@@ -1348,15 +1300,6 @@ option:checked {
   }
   .header-social {
     left: 20px;
-  }
-}
-
-@media screen and (max-width: 595px) {
-  .footer-menu {
-    flex-wrap: wrap;
-  }
-  .complectation-block__text {
-    padding-left: 5%;
   }
 }
 
@@ -1454,12 +1397,12 @@ option:checked {
     width: 312px;
     height: 200px
   }
+  .footer-menu {
+    flex-wrap: wrap;
+  }
   .modal-form {
     width: 75%;
     margin: 40% auto;
-  }
-  .complectation-block__text_button1:last-child {
-    margin-bottom: 20px;
   }
 }
 
