@@ -42,6 +42,10 @@ a {
   padding-top: 3%;
 }
 
+.hamburger {
+  position: relative;
+}
+
 .header-top__left_hamburger {
   display: block;
   position: relative;
@@ -88,15 +92,37 @@ a {
 }
 
 .header-top__left nav {
-/*  display: none;*/
+  display: none;
+  position: absolute;
+  left: 10px;
+  top: 20px;
 }
 
 .menu {
   background-color: #0d3351;
-  padding-top: 73px;
-  padding-left: 44px;
-  width: 376px;
+  width: 332px;
   height: 340px;
+  padding: 73px 44px 0;
+}
+
+.menu-item {
+  color: #fff;
+  font-size: 18px;
+  line-height: 48px;
+  letter-spacing: 0.9px;
+  padding-left: 10px;
+  display: block;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.menu-item:hover {
+  background: #fff;
+  color: #0d3351;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .header-top__right {
