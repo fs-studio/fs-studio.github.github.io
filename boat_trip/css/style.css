@@ -21,7 +21,7 @@ a {
 
 .wrapper {
   width: 100%;
-  position: relative;
+/*  position: relative;*/
 }
 
 .container {
@@ -41,6 +41,7 @@ a {
 }
 
 .section-title {
+  text-align: center;
   font-size: 36px;
   font-weight: 400;
   letter-spacing: 1.8px;
@@ -48,7 +49,8 @@ a {
 
 .header {
   background: #cde2fd url('../img/bg.png') 0 0 no-repeat;
-  height: 100vh;
+/*  height: 100vh;*/
+  height: 648px;
   -webkit-background-size: cover;
   background-size: cover;
 }
@@ -209,4 +211,75 @@ a {
 
 .header-bottom__decoration {
   text-align: center;
+}
+
+.main {
+  padding-top: 8%;
+  background: #f3f3f3;
+}
+
+.main-catalog__sort {
+  text-align: center;
+}
+
+.main-catalog__sort span {
+  font-style: italic;
+}
+
+.main-catalog__assortment {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*
+.main-catalog__assortment_block .block-img {
+  margin-bottom: 29px;
+}
+*/
+
+.main-catalog__assortment_block .block-img img {
+  max-width: 100%;
+}
+
+.main-catalog__assortment_block .block-descr {
+  background: #fff;
+  padding: 29px 0 39px 38px;
+  position: relative;
+  top: -5px;
+}
+
+.main-catalog__assortment_block .block-descr__title {
+  color: #00a2dd;
+  font-size: 18px;
+  letter-spacing: 0.9px;
+  margin-bottom: 15px;
+}
+
+.main-catalog__assortment_block .block-descr__text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.7px;
+  margin-bottom: 22px;
+}
+
+.main-catalog__assortment_block .block-descr__text span {
+  font-weight: bold;
+}
+
+.main-catalog__assortment_block .block-descr__price {
+  font-size: 30px;
+  letter-spacing: 1.5px;
+}
+
+.main-catalog__assortment_block .block-descr__price span {
+  opacity: 0.55;
+  font-size: 18px;
+  text-decoration: line-through;
+  letter-spacing: 0.9px;
+  margin-left: 32px;
 }
