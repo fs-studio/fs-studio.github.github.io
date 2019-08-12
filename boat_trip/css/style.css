@@ -233,15 +233,15 @@ a {
   display: -o-flex;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-/*
-.main-catalog__assortment_block .block-img {
-  margin-bottom: 29px;
+.main-catalog__assortment_block {
+  flex-basis: 49%;
 }
-*/
 
 .main-catalog__assortment_block .block-img img {
+  width: 100%;
   max-width: 100%;
 }
 
