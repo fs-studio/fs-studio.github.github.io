@@ -49,7 +49,7 @@
       <div class="header-bottom">
         <div class="logo"><img src="img/logo.png" alt="Морские прогулки по Черному морю"></div>
         <h1 class="header-bottom__title">Морские прогулки<span>по чёрному морю</span></h1>
-        <a href="/" class="header-bottom__button button">Выбрать круиз</a>
+        <a href="#catalog" class="header-bottom__button button">Выбрать круиз</a>
       </div>
     </div>
     <div class="header-bottom__decoration"><img src="img/header-decoration.png" alt=""></div>
@@ -57,10 +57,11 @@
   <main class="main wrapper">
     <div class="container">
       <section class="main-catalog">
-        <h2 class="section-title">Каталог круизов</h2>
-        <div class="main-catalog__sort">Сортировать круизы по <span>цене</span></div>
+        <h2 class="section-title" id="catalog">Каталог круизов</h2>
+<!--        <div class="main-catalog__sort">Сортировать круизы по <span>цене</span></div>-->
         <div class="main-catalog__assortment">
           <div class="main-catalog__assortment_block">
+           <div class="sticker sticker-blue"><span>Хит продаж</span></div>
             <img src="img/anapa.png" alt="Анапа" class="block-img" style="display: block;">
             <div class="block-descr">
               <div class="block-descr__title">Морской круиз в Анапу</div>
@@ -73,7 +74,8 @@
           </div>
           <div class="main-catalog__assortment_block assortment-block_double">
             <div class="main-catalog__assortment_block1">
-              <div class="block-img"><img src="img/obzor.png" alt="Обзорная прогулка"></div>
+              <div class="sticker sticker-red"><span>Акция</span></div>
+              <img src="img/obzor.png" alt="Обзорная прогулка" class="block-img">
               <div class="block-descr">
                 <div class="block-descr__title">Обзорная морская прогулка с экскурсией</div>
                 <ul class="block-descr__text">
@@ -84,7 +86,8 @@
               </div>
             </div>
             <div class="main-catalog__assortment_block2">
-              <div class="block-img"><img src="img/gelendzhik.png" alt="Геленджик"></div>
+              <div class="sticker sticker-red"><span>Скидка 30%</span></div>
+              <img src="img/gelendzhik.png" alt="Геленджик" class="block-img">
               <div class="block-descr">
                 <div class="block-descr__title">Морская прогулка в Геленджик</div>
                 <ul class="block-descr__text">
@@ -96,7 +99,7 @@
             </div>
           </div>
           <div class="main-catalog__assortment_block">
-            <div class="block-img"><img src="img/novorossiysk.png" alt="Новороссийск"></div>
+            <img src="img/novorossiysk.png" alt="Новороссийск" class="block-img">
             <div class="block-descr">
               <div class="block-descr__title">Морской круиз в Новороссийск</div>
               <ul class="block-descr__text">
@@ -107,7 +110,7 @@
             </div>
           </div>
           <div class="main-catalog__assortment_block">
-            <div class="block-img"><img src="img/abrau.png" alt="Абрау-Дюрсо"></div>
+            <img src="img/abrau.png" alt="Абрау-Дюрсо" class="block-img">
             <div class="block-descr">
               <div class="block-descr__title">Морская прогулка в Абрау-Дюрсо</div>
               <ul class="block-descr__text">
@@ -120,7 +123,7 @@
         </div>
         <div class="main-catalog__assortment">
           <div class="main-catalog__assortment_block assortment-block_hidden">
-            <div class="block-img"><img src="img/arhipo-osipovka.jpg" alt="Архипо-Осиповка"></div>
+            <img src="img/arhipo-osipovka.jpg" alt="Архипо-Осиповка" class="block-img">
             <div class="block-descr">
               <div class="block-descr__title">Морская прогулка по Архипо-Осиповке</div>
               <ul class="block-descr__text">
@@ -131,7 +134,7 @@
             </div>
           </div>
           <div class="main-catalog__assortment_block assortment-block_hidden">
-            <div class="block-img"><img src="img/tuapse.jpg" alt="Туапсе"></div>
+            <img src="img/tuapse.jpg" alt="Туапсе" class="block-img">
             <div class="block-descr">
               <div class="block-descr__title">Морская прогулка по Туапсе</div>
               <ul class="block-descr__text">
@@ -172,10 +175,8 @@
     </div>
     <a href="https://fsmalcompany.ru/" class="copyright">Разработка сайта: Веб-студия F&amp;S</a>
   </footer>
-  <script
-  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
-  crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/scroll.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

@@ -112,10 +112,17 @@ a {
 }
 
 .header-top__left nav {
-  display: none;
+/*  display: none;*/
+  opacity: 0;
   position: absolute;
   left: 10px;
   top: 20px;
+  transition: 0.3s;
+}
+
+.header-top__left nav.visible {
+  opacity: 1;
+  transition: 0.3s;
 }
 
 .menu {
@@ -207,6 +214,8 @@ a {
 
 .header-bottom__button {
   margin: 57px auto 17px auto;
+  position: relative;
+  z-index: 100;
 }
 
 .header-bottom__decoration {
@@ -219,7 +228,7 @@ a {
 }
 
 .main-catalog {
-  padding-bottom: 62px;
+  padding-bottom: 47px;
 }
 
 .main-catalog__sort {
@@ -242,6 +251,47 @@ a {
 
 .main-catalog__assortment_block {
   flex-basis: 49%;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.main-catalog__assortment_block1,
+.main-catalog__assortment_block2 {
+  position: relative;
+}
+
+.main-catalog__assortment_block .sticker {
+  position: absolute;
+  top: -7px;
+  right: 46px;
+  width: 0;
+  height: 0;
+  border-top: 81px solid;
+  border-left: 44px solid;
+  border-right: 45px solid;
+  border-bottom: 20px solid;
+  color: #fff;
+  font-family: Raleway;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.main-catalog__assortment_block .sticker span {
+  position: relative;
+  top: -20px;
+}
+
+.main-catalog__assortment_block .sticker-blue {
+  border-color: #33c7fd;
+  border-bottom-color: transparent;
+}
+
+.main-catalog__assortment_block .sticker-red {
+  border-color: #f20542;
+  border-bottom-color: transparent;
 }
 
 /*
@@ -252,16 +302,18 @@ a {
 }
 */
 
-.main-catalog__assortment_block .block-img img {
-  width: 100%;
+.main-catalog__assortment_block .block-img {
+  display: block;
   max-width: 100%;
 }
 
 .main-catalog__assortment_block .block-descr {
   background: #fff;
   padding: 29px 0 39px 38px;
+/*
   position: relative;
   top: -5px;
+*/
 }
 
 .main-catalog__assortment_block .block-descr__title {
@@ -331,12 +383,20 @@ a {
   color: #0d3351;
 }
 
+.footer-social__icons {
+  display: flex;
+}
+
 .footer-social__icons a:not(:last-child) {
   margin-right: 10px;
 }
 
 .footer-social__icons .fab {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
   color: #fff;
   padding: 8px;
   background-color: #0d3351;
