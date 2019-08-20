@@ -48,7 +48,7 @@ a {
 }
 
 .header {
-  background: #cde2fd url('../img/bg.png') 0 0 no-repeat;
+  background: #cde2fd url('../img/bg.png') center bottom no-repeat;
 /*  height: 100vh;*/
   height: 648px;
   -webkit-background-size: cover;
@@ -117,12 +117,14 @@ a {
   position: absolute;
   left: 10px;
   top: 20px;
+  z-index: 0;
   transition: 0.3s;
 }
 
 .header-top__left nav.visible {
   opacity: 1;
-  transition: 0.3s;
+  transition: opacity 0.3s;
+  z-index: 1;
 }
 
 .menu {
@@ -215,7 +217,6 @@ a {
 .header-bottom__button {
   margin: 57px auto 17px auto;
   position: relative;
-  z-index: 100;
 }
 
 .header-bottom__decoration {
@@ -304,7 +305,7 @@ a {
 
 .main-catalog__assortment_block .block-img {
   display: block;
-  max-width: 100%;
+  width: 100%;
 }
 
 .main-catalog__assortment_block .block-descr {
