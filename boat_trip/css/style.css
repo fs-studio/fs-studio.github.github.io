@@ -464,7 +464,58 @@ a {
   list-style-position: inside;
 }
 
+/*Контакты*/
+.main-contacts {
+  padding: 1% 0;
+}
+
+.main-contacts section {
+  text-align: center;
+}
+
+.main-contacts p:not(:last-child) {
+  text-indent: 0;
+}
+
+/*Как забронировать*/
+.main-booking {
+  padding: 1% 0;
+}
+
+.booking-algorithm {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+/*Гарантия лучшей цены*/
+.main-price {
+  padding: 1% 0 3%;
+  line-height: 1.5;
+}
+
+.main-price ul {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.main-price ol {
+  list-style-position: inside;
+}
+
+.main-price ul ul,
+.main-price ol ul {
+  margin-left: 20px;
+}
+
 /*Медиа-запросы*/
+@media screen and (max-width: 2000px) {
+  .assortment-block_double {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
 @media screen and (max-width: 1650px) {
   .main-catalog__assortment_block .sticker-double {
     top: -4px;
@@ -476,11 +527,6 @@ a {
   .main-catalog__assortment_block .sticker-double span {
     font-size: 13px;
     top: -15px;
-  }
-  .assortment-block_double {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
   }
   .assortment-block_double .block-descr {
     padding: 19px 25px 26px 25px;
@@ -673,5 +719,8 @@ a {
 @media screen and (max-width: 349px) {
   .header-bottom__title span {
     font-size: 1em;
+  }
+  .main-price .section-title {
+    font-size: 23px;
   }
 }
