@@ -1,0 +1,32 @@
+:root {
+  --main-color:#1269db;
+  --black:#000000;
+  --white:#ffffff;
+  --light-blue:#1572e8;
+}
+
+body {
+  position:relative;
+  margin:0;
+  padding:0;
+}
+
+.panel {
+  width:auto;
+  position:relative;
+  display:flex;
+  flex-flow:row nowrap;
+}
+
+.header {
+  display:flex;
+}
+
+.bottom-shadow::after {
+  content:'';
+  position:absolute;
+  width:100%;
+  bottom:1px;
+  z-index:-1;
+  box-shadow:0px 0px 8px 2px var(--black);
+}
