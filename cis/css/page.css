@@ -1,0 +1,28 @@
+.left-panel {
+  flex-grow:1;
+  height:auto;
+}
+
+.main-panel {
+  flex-grow:9;
+  height:auto;
+}
+
+.header__panel {
+  width:100%;
+  min-height:65px;
+  height:auto;
+  background:var(--main-color);
+}
+
+.header__left-panel {
+  background:var(--light-blue);
+}
+
+.header__right-menu {
+  width:100%;
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-end;
+  margin:auto 0%;
+}
