@@ -12,7 +12,7 @@
 //  centerMode: true,
 //  focusOnSelect: true
 //});
-$('.slider-for').slick({
+$('.slider').slick({
   autoplay: true,
   autoplaySpeed: 5000,
   speed: 2500,
