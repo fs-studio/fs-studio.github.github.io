@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Rubik&display=swap');
+
 :root {
   --main-color:#1269db;
   --black:#000000;
   --white:#ffffff;
+  --gray:#e9e9e9;
   --light-blue:#1572e8;
+  --light-gray:#f9fbfd;
 }
 
 body {
@@ -14,6 +18,12 @@ body {
 
 .display-flex {
   display:flex;
+}
+
+.content {
+  position:relative;
+  width:100%;
+  flex-flow:row nowrap;
 }
 
 .icon {
@@ -30,16 +40,34 @@ body {
   height:42px;
 }
 
+.text {
+  font-size:1em;
+  font-weight:normal;
+  font-family:Arial;
+  margin:0;
+}
+
+.font-PTSans {
+  font-family:'PT Sans Narrow', sans-serif;
+}
+
+.font-Rubik {
+  font-family:'Rubik', sans-serif; /* Main */
+}
+
+/* Top panel */
+
 .panel {
   width:100%;
   height:60px;
   position:relative;
   flex-flow:row nowrap;
   box-shadow:0px 0px 5px var(--black);
+  z-index:2;
 }
 
 .panel-left {
-  flex-grow:1;
+  width:17rem;
   background:var(--light-blue);
 }
 
@@ -54,7 +82,7 @@ body {
 }
 
 .panel-main {
-  flex-grow:9;
+  width:100%;
   background:var(--main-color);
 }
 
@@ -89,3 +117,60 @@ body {
   border:1px solid var(--white);
   object-fit:cover;
 }
+
+/* Top panel */
+
+/* Left menu */
+
+.left-menu {
+  height:auto;
+  width:17rem;
+  background:var(--white);
+  flex-direction:column;
+}
+
+.left-menu__padding {
+  padding:5%;
+  width:auto;
+}
+
+.left-menu__user {
+  width:100%;
+  height:70px;
+  justify-content:center;
+  border-bottom:1px solid var(--gray);
+}
+
+.left-panel__avatar {
+  margin:auto 0%;
+}
+
+.left-menu__user-info {
+  margin:auto 0% auto 5%;
+}
+
+.user-info__name {
+  font-weight:600;
+}
+
+.user-info__type {
+  font-size:0.8em;
+}
+
+.left-menu__menu {
+  width:100%;
+  justify-content:center;
+  height:auto;
+}
+
+/* Left menu */
+
+/* Page */
+
+.page {
+  height:auto;
+  width:100%;
+  background:var(--light-gray);
+}
+
+/* Page */
