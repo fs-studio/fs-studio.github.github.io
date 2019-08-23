@@ -62,7 +62,7 @@
         <h2 class="section-title" id="catalog">Каталог круизов</h2>
 <!--        <div class="main-catalog__sort">Сортировать круизы по <span>цене</span></div>-->
         <div class="main-catalog__assortment">
-          <div class="main-catalog__assortment_block">
+          <div class="main-catalog__assortment_block" id="anapa">
            <div class="sticker sticker-blue"><span>Хит продаж</span></div>
             <img src="img/anapa.png" alt="Анапа" class="block-img">
             <div class="block-descr">
@@ -75,7 +75,7 @@
             </div>
           </div>
           <div class="main-catalog__assortment_block assortment-block_double">
-            <div class="main-catalog__assortment_block1">
+            <div class="main-catalog__assortment_block1" id="obzor">
               <div class="sticker sticker-double sticker-red"><span>Акция</span></div>
               <img src="img/obzor.png" alt="Обзорная прогулка" class="block-img">
               <div class="block-descr">
@@ -87,7 +87,7 @@
                 <div class="block-descr__price">5 000 руб.<span>15000 руб.</span></div>
               </div>
             </div>
-            <div class="main-catalog__assortment_block2">
+            <div class="main-catalog__assortment_block2" id="gelendzhik">
               <div class="sticker sticker-double sticker-red"><span>Скидка 30%</span></div>
               <img src="img/gelendzhik.png" alt="Геленджик" class="block-img">
               <div class="block-descr">
@@ -100,7 +100,7 @@
               </div>
             </div>
           </div>
-          <div class="main-catalog__assortment_block">
+          <div class="main-catalog__assortment_block" id="novorossiysk">
             <img src="img/novorossiysk.png" alt="Новороссийск" class="block-img">
             <div class="block-descr">
               <div class="block-descr__title">Морской круиз в Новороссийск</div>
@@ -111,7 +111,7 @@
               <div class="block-descr__price">14 800 руб.</div>
             </div>
           </div>
-          <div class="main-catalog__assortment_block">
+          <div class="main-catalog__assortment_block" id="abrau">
             <img src="img/abrau.png" alt="Абрау-Дюрсо" class="block-img">
             <div class="block-descr">
               <div class="block-descr__title">Морская прогулка в Абрау-Дюрсо</div>
@@ -124,7 +124,7 @@
           </div>
         </div>
         <div class="main-catalog__assortment">
-          <div class="main-catalog__assortment_block assortment-block_hidden">
+          <div class="main-catalog__assortment_block assortment-block_hidden" id="arhip">
             <img src="img/arhipo-osipovka.jpg" alt="Архипо-Осиповка" class="block-img">
             <div class="block-descr">
               <div class="block-descr__title">Морская прогулка по Архипо-Осиповке</div>
@@ -135,7 +135,7 @@
               <div class="block-descr__price">12 400 руб.</div>
             </div>
           </div>
-          <div class="main-catalog__assortment_block assortment-block_hidden">
+          <div class="main-catalog__assortment_block assortment-block_hidden" id="tuapse">
             <img src="img/tuapse.jpg" alt="Туапсе" class="block-img">
             <div class="block-descr">
               <div class="block-descr__title">Морская прогулка по Туапсе</div>
@@ -177,18 +177,12 @@
     </div>
     <a href="https://fsmalcompany.ru/" class="copyright">Разработка сайта: Веб-студия F&amp;S</a>
   </footer>
-  <div class="modal" id="anapa">
+  <div class="modal" id="anapa-modal">
     <div class="overlay">
       <div class="modal-block">
         <div class="modal-close" id="modal-close"><img src="img/close.png" alt=""></div>
         <div class="modal-block__slider">
           <div class="slider-for">
-            <div class="slide"><img src="img/anapa1.jpg" alt="Слайд 1"></div>
-            <div class="slide"><img src="img/anapa2.jpg" alt="Слайд 2"></div>
-            <div class="slide"><img src="img/anapa3.jpg" alt="Слайд 3"></div>
-            <div class="slide"><img src="img/anapa4.jpg" alt="Слайд 4"></div>
-          </div>
-          <div class="slider-nav">
             <div class="slide"><img src="img/anapa1.jpg" alt="Слайд 1"></div>
             <div class="slide"><img src="img/anapa2.jpg" alt="Слайд 2"></div>
             <div class="slide"><img src="img/anapa3.jpg" alt="Слайд 3"></div>
@@ -218,8 +212,8 @@
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/scroll.js"></script>
-  <script src="js/script.js"></script>
   <script src="slick/slick.min.js"></script>
   <script src="js/slider.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
