@@ -776,6 +776,9 @@ a {
 }
 
 @media screen and (max-width: 500px) {
+  .header-top {
+    padding: 25px 0;
+  }
   .header-top__right .account {
     display: none;
   }
