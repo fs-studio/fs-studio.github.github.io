@@ -21,7 +21,12 @@ $(function() {
     $("#click").on('click', function() {
         let openClass = '.' + $(this).attr('data-open');
 
-        $(openClass).toggle('active');
+        if (!$(openClass).hasClass('active')) {
+            $(openClass).addClass('active');
+        } else {
+            $(openClass).removeClass('active');
+        }
+
     });
 
 });

@@ -123,7 +123,7 @@
   width:12%;
   min-height:100px;
   height:auto;
-  padding:1.5%;
+  padding:1%;
   margin-top:8px;
   margin-left:-12%;
   flex-direction:column;
@@ -134,12 +134,23 @@
 
 .profile__about {
   display:flex;
+  padding-bottom:30px;
+  border-bottom:1px solid var(--gray);
+}
 
+.profile__about .avatar {
+  width:52px;
+  height:52px;
 }
 
 .profile_image {
   border-radius:5px;
 }
+
+.profile__user-data {
+  margin-left:7%;
+}
+
 
 /* Top panel --Right elements */
 
