@@ -122,9 +122,10 @@
 .slick-dots
 {
     position: absolute;
-    bottom: -25px;
+    bottom: -60px;
 
-    display: block;
+    display: flex;
+    justify-content: space-between;
 
     width: 100%;
     padding: 0;
@@ -140,19 +141,122 @@
 
     display: inline-block;
 
-    width: 20px;
-    height: 20px;
-    margin: 0 5px;
+    margin: 0;
     padding: 0;
 
     cursor: pointer;
+    width: 83px;
+    height: 55px;
 }
+
+#anapa-modal .slick-dots li:nth-child(1) {
+  background: url('../img/anapa1.jpg') center no-repeat / cover;
+}
+#anapa-modal .slick-dots li:nth-child(2) {
+  background: url('../img/anapa2.jpg') center no-repeat / cover;
+}
+#anapa-modal .slick-dots li:nth-child(3) {
+  background: url('../img/anapa3.jpg') center no-repeat / cover;
+}
+#anapa-modal .slick-dots li:nth-child(4) {
+  background: url('../img/anapa4.jpg') center no-repeat / cover;
+  background-size: cover;
+}
+
+#obzor-modal .slick-dots li:nth-child(1) {
+  background: url('../img/obzor1.jpg') center no-repeat / cover;
+}
+#obzor-modal .slick-dots li:nth-child(2) {
+  background: url('../img/obzor2.jpg') center no-repeat / cover;
+}
+#obzor-modal .slick-dots li:nth-child(3) {
+  background: url('../img/obzor3.jpg') center no-repeat / cover;
+}
+#obzor-modal .slick-dots li:nth-child(4) {
+  background: url('../img/obzor4.jpg') center no-repeat / cover;
+  background-size: cover;
+}
+
+#gelendzhik-modal .slick-dots li:nth-child(1) {
+  background: url('../img/gelendzhik1.jpg') center no-repeat / cover;
+}
+#gelendzhik-modal .slick-dots li:nth-child(2) {
+  background: url('../img/gelendzhik2.jpg') center no-repeat / cover;
+}
+#gelendzhik-modal .slick-dots li:nth-child(3) {
+  background: url('../img/gelendzhik3.jpg') center no-repeat / cover;
+}
+#gelendzhik-modal .slick-dots li:nth-child(4) {
+  background: url('../img/gelendzhik4.jpg') center no-repeat / cover;
+  background-size: cover;
+}
+
+#novorossiysk-modal .slick-dots li:nth-child(1) {
+  background: url('../img/novorossiysk1.jpg') center no-repeat / cover;
+}
+#novorossiysk-modal .slick-dots li:nth-child(2) {
+  background: url('../img/novorossiysk2.jpg') center no-repeat / cover;
+}
+#novorossiysk-modal .slick-dots li:nth-child(3) {
+  background: url('../img/novorossiysk3.jpg') center no-repeat / cover;
+}
+#novorossiysk-modal .slick-dots li:nth-child(4) {
+  background: url('../img/novorossiysk4.jpg') center no-repeat / cover;
+  background-size: cover;
+}
+
+#abrau-modal .slick-dots li:nth-child(1) {
+  background: url('../img/abrau1.jpg') center no-repeat / cover;
+}
+#abrau-modal .slick-dots li:nth-child(2) {
+  background: url('../img/abrau2.jpg') center no-repeat / cover;
+}
+#abrau-modal .slick-dots li:nth-child(3) {
+  background: url('../img/abrau3.jpg') center no-repeat / cover;
+}
+#abrau-modal .slick-dots li:nth-child(4) {
+  background: url('../img/abrau4.jpg') center no-repeat / cover;
+  background-size: cover;
+}
+
+#arhip-modal .slick-dots li:nth-child(1) {
+  background: url('../img/arhip1.jpg') center no-repeat / cover;
+}
+#arhip-modal .slick-dots li:nth-child(2) {
+  background: url('../img/arhip2.jpg') center no-repeat / cover;
+}
+#arhip-modal .slick-dots li:nth-child(3) {
+  background: url('../img/arhip3.jpg') center no-repeat / cover;
+}
+#arhip-modal .slick-dots li:nth-child(4) {
+  background: url('../img/arhip4.jpg') center no-repeat / cover;
+  background-size: cover;
+}
+
+#tuapse-modal .slick-dots li:nth-child(1) {
+  background: url('../img/tuapse1.jpg') center no-repeat / cover;
+}
+#tuapse-modal .slick-dots li:nth-child(2) {
+  background: url('../img/tuapse2.jpg') center no-repeat / cover;
+}
+#tuapse-modal .slick-dots li:nth-child(3) {
+  background: url('../img/tuapse3.jpg') center no-repeat / cover;
+}
+#tuapse-modal .slick-dots li:nth-child(4) {
+  background: url('../img/tuapse4.jpg') center no-repeat / cover;
+  background-size: cover;
+}
+
+.slick-dots li.slick-active {
+  outline: 1px solid #00a2dd;
+}
+
 .slick-dots li button
 {
     font-size: 0;
     line-height: 0;
 
-    display: block;
+    display: none;
 
     width: 20px;
     height: 20px;

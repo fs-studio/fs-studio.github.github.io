@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/fonts.css">
 </head>
 <body>
-  <header class="header header-about wrapper">
+  <header class="header header-about">
     <div class="container">
       <div class="header-top">
         <div class="header-top__left">
@@ -23,7 +23,7 @@
                 <li><a href="index.html#catalog" class="menu-item">Популярные маршруты</a></li>
                 <li><a href="javascript:void(0);" class="menu-item">Гарантия лучшей цены</a></li>
                 <li><a href="booking.html" class="menu-item">Как забронировать</a></li>
-                <li><a href="#" class="menu-item">Вход для партнеров</a></li>
+                <li><a href="javascript:void(0);" class="menu-item to-offer">Оставить заявку</a></li>
                 <li><a href="about.html" class="menu-item">О компании</a></li>
                 <li><a href="contacts.html" class="menu-item">Контакты</a></li>
               </ul>
@@ -33,7 +33,7 @@
         <div class="header-top__right">
           <div class="block account">
             <div class="icon"><i class="fas fa-user"></i></div>
-            <div class="account-text">Личный кабинет</div>
+            <div class="account-text to-offer">Забронировать</div>
           </div>
           <div class="block currency">
             <div class="icon"><i class="fas fa-ruble-sign"></i></div>
@@ -48,7 +48,7 @@
       </div>
     </div>
   </header>
-  <main class="main main-price wrapper">
+  <main class="main main-price">
     <div class="container">
       <section>
         <h2 class="section-title">Программа «Гарантия лучшей цены»</h2>
@@ -92,11 +92,11 @@
       </section>
     </div>
   </main>
-  <footer class="wrapper">
+  <footer>
     <div class="footer container">
       <nav>
         <ul class="footer-menu">
-          <li><a href="" class="footer-menu__item">Вход для партнеров</a></li>
+          <li><a href="javascript:void(0);" class="footer-menu__item to-offer">Оставить заявку</a></li>
           <li><a href="about.html" class="footer-menu__item">О компании</a></li>
           <li><a href="contacts.html" class="footer-menu__item">Контакты</a></li>
         </ul>
@@ -116,8 +116,21 @@
         <div class="footer-contacts__company">© 2019 OOO «Городские Круизы»</div>
       </div>
     </div>
-    <a href="https://fsmalcompany.ru/" class="copyright">Разработка сайта: Веб-студия F&amp;S</a>
+    <a href="https://fsmalcompany.ru/" target="_blank" class="copyright">Разработка сайта: Веб-студия F&amp;S</a>
   </footer>
+  <div class="modal" id="form">
+    <div class="overlay">
+      <div class="modal-block">
+        <div class="modal-close" id="modal-close"><img src="img/close.png" alt=""></div>
+        <div class="modal-block__text_title">Оставьте заявку:</div>
+        <form action="#" method="post">
+          <input type="text" placeholder="Ваше имя" required>
+          <input type="tel" placeholder="Ваш телефон" required>
+          <input type="submit" value="Оставить заявку" class="button">
+        </form>
+      </div>
+    </div>
+  </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/scroll.js"></script>
   <script src="js/script.js"></script>
