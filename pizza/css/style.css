@@ -7268,7 +7268,7 @@ a.text-dark:hover, a.text-dark:focus {
     border: 1px solid #dee2e6 !important; } }
 
 body {
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: "Museo Sans Cyrl 300", Arial, sans-serif;
   background: #121618;
   font-size: 15px;
   line-height: 1.8;
@@ -7300,7 +7300,7 @@ h1, h2, h3, h4, h5,
   line-height: 1.4;
   color: #fff;
   font-weight: 400;
-  font-family: "Josefin Sans", Arial, sans-serif; }
+  font-family: "FuturaDemiC", Arial, sans-serif; }
 
 .text-primary {
   color: #fac564 !important; }
@@ -7319,7 +7319,7 @@ h1, h2, h3, h4, h5,
       .ftco-navbar-light .navbar-brand {
         color: #fff; } }
   .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
-    font-size: 14px;
+    font-size: 15px;
     padding-top: .9rem;
     padding-bottom: .9rem;
     padding-left: 0;
@@ -7546,7 +7546,7 @@ h1, h2, h3, h4, h5,
           .owl-carousel.home-slider .slider-item .slider-text {
             text-align: center; } }
         .owl-carousel.home-slider .slider-item .slider-text .subheading {
-          font-family: "Nothing You Could Do", cursive;
+          font-family: "Segoe Print", cursive;
           font-size: 30px;
           color: #fac564; }
         .owl-carousel.home-slider .slider-item .slider-text h1 {
