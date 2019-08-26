@@ -14,3 +14,14 @@ $(function() {
 
 
 /* Preloader */
+
+
+$(function() {
+
+    $("#click").on('click', function() {
+        let openClass = '.' + $(this).attr('data-open');
+
+        $(openClass).toggle('active');
+    });
+
+});

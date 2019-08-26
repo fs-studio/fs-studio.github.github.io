@@ -115,6 +115,34 @@
 
 /* Left menu */
 
+/* Top panel --Right elements */
+
+.panel-main__profile {
+  display:none;
+  position:absolute;
+  width:12%;
+  min-height:100px;
+  height:auto;
+  padding:1.5%;
+  margin-top:8px;
+  margin-left:-12%;
+  flex-direction:column;
+  background:var(--white);
+  z-index:2;
+  box-shadow:0px 0px 2px var(--gray);
+}
+
+.profile__about {
+  display:flex;
+
+}
+
+.profile_image {
+  border-radius:5px;
+}
+
+/* Top panel --Right elements */
+
 /* Page */
 
 .page {
