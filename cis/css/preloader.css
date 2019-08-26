@@ -1,0 +1,27 @@
+.preloader {
+  position:fixed;
+  display:flex;
+  background:var(--white);
+  width:100%;
+  height:100%;
+  z-index:9;
+  justify-content:center;
+  transition:1s;
+}
+
+.preloader_active {
+  visibility:visible;
+  opacity:1;
+  z-index:9;
+}
+
+.preloader_disable {
+  visibility:hidden;
+  opacity:0;
+  z-index:0;
+}
+
+.preloader__inner {
+  margin:auto;
+  display:flex;
+}
