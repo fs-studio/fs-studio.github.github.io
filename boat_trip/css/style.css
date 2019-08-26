@@ -811,6 +811,9 @@ a {
     top: -10px;
     font-size: 8px;
   }
+  .modal-timing, .modal-timing + ul {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 468px) {
