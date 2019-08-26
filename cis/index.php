@@ -1,3 +1,5 @@
+<?php /* Only for test */ require_once 'data.php'; ?>
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -5,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <meta name="robots" content="noindex, nofollow" />
   <meta name="description" content="Корпоративная информационная система компании F&S" />
+  <title>Пользователь <?=$users[$_SESSION['user_id']]['name'];?> | КИС компании F&S</title>
 
 
   <link rel="stylesheet" href="css/main.css" />
@@ -60,8 +63,8 @@
             </div>
           </div>
           <div class="left-menu__user-info">
-            <p class="text user-info__name font-Rubik">Александр</p>
-            <p class="text user-info__type font-PTSans">Администратор</p>
+            <p class="text user-info__name font-Rubik"><?=$users[$_SESSION['user_id']]['name'];?></p>
+            <p class="text user-info__type font-PTSans"><?=$users[$_SESSION['user_id']]['position'];?></p>
           </div>
         </div>
         <div class="left-menu__menu">
