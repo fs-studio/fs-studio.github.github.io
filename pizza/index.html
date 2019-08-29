@@ -849,7 +849,7 @@
           </div>
         </div>
         <div class="form-group">
-          <input type="submit" value="Заказать" class="btn btn-primary py-3 px-4">
+          <input type="submit" value="Заказать" class="btn btn-primary py-3 px-4" id="lead">
         </div>
       </form>
     </div>
@@ -881,6 +881,10 @@
         $('.overlay-block, .modal-block').show(300);
         $('.overlay-block').click(function() {
           $('.overlay-block, .modal-block').hide(300);
+        });
+        $('#lead').click(function() {
+          alert('Спасибо за заказ!');
+          window.location.href="";
         });
       });
     });
