@@ -288,13 +288,13 @@ jQuery(document).ready(function($) {
 	var siteCountDown = function() {
 
 		if ( $('#date-countdown').length > 0 ) {
-			$('#date-countdown').countdown('2020/10/10', function(event) {
+			$('#date-countdown').countdown('2020/06/01', function(event) {
 			  var $this = $(this).html(event.strftime(''
-			    + '<span class="countdown-block"><span class="label">%w</span> weeks </span>'
-			    + '<span class="countdown-block"><span class="label">%d</span> days </span>'
-			    + '<span class="countdown-block"><span class="label">%H</span> hr </span>'
-			    + '<span class="countdown-block"><span class="label">%M</span> min </span>'
-			    + '<span class="countdown-block"><span class="label">%S</span> sec</span>'));
+			    + '<span class="countdown-block"><span class="label">%w</span> нед </span>'
+			    + '<span class="countdown-block"><span class="label">%d</span> дн </span>'
+			    + '<span class="countdown-block"><span class="label">%H</span> ч </span>'
+			    + '<span class="countdown-block"><span class="label">%M</span> мин </span>'
+			    + '<span class="countdown-block"><span class="label">%S</span> сек</span>'));
 			});
 		}
 				
