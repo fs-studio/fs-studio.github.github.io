@@ -45,12 +45,20 @@
           </div>
           <div class="icon">
             <div class="icon__element">
-              <i class="fas fa-bell icon_white"></i>
+              <i class="fas fa-bell icon_white js-openClass" data-open="panel__push"></i>
+            </div>
+            <div class="panel__push">
+              <div class="push__caption">
+                <p class="text font-Rubik">Мои уведомления</p>
+              </div>
+              <div class="push__messages">
+                <p class="text font-PTSans">Уведомлений нет</p>
+              </div>
             </div>
           </div>
           <div class="icon">
             <div class="icon__element">
-              <i class="fas fa-th icon_white"></i>
+              <i class="fas fa-th icon_white js-openClass" data-open="right-panel"></i>
             </div>
           </div>
           <div class="element__avatar">
@@ -99,18 +107,74 @@
           </div>
         </div>
         <div class="left-menu__menu">
+          <div class="left-menu__caption font-Rubik">Меню</div>
           <ul class="list">
-            <li>Dashboard</li>
-            <li>Задачи</li>
-            <li>Сайты</li>
-            <li>Заказы</li>
-            <li>Инструкции</li>
+            <li class="menu__points">
+              <div class="icon icon__menu">
+                <div class="icon__element">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+              </div>
+              <a href="javascript:void(0);" class="link link__menu font-Rubik">Dashboard</a>
+            </li>
+            <li class="menu__points">
+              <div class="icon icon__menu">
+                <div class="icon__element">
+                  <i class="fas fa-cart-arrow-down"></i>
+                </div>
+              </div>
+              <a href="javascript:void(0);" class="link link__menu font-Rubik">Заказы</a>
+            </li>
+            <li class="menu__points">
+              <div class="icon icon__menu">
+                <div class="icon__element">
+                  <i class="fas fa-tasks"></i>
+                </div>
+              </div>
+              <a href="javascript:void(0);" class="link link__menu font-Rubik">Задачи</a>
+            </li>
+            <li class="menu__points">
+              <div class="icon icon__menu">
+                <div class="icon__element">
+                  <i class="fas fa-sitemap"></i>
+                </div>
+              </div>
+              <a href="javascript:void(0);" class="link link__menu font-Rubik">Сайты</a>
+            </li>
+            <li class="menu__points">
+              <div class="icon icon__menu">
+                <div class="icon__element">
+                  <i class="fas fa-file-word"></i>
+                </div>
+              </div>
+              <a href="javascript:void(0);" class="link link__menu font-Rubik">Инструкции</a>
+            </li>
           </ul>
+          <div class="copyrights">
+            <div class="copyrights__author">
+              <p class="text font-PTSans">&copy;2019. F&SMalcompany LTD</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <div class="page" style="height:1000px;">
 
+    </div>
+  </div>
+  <div class="right-panel">
+    <div class="right-panel__inner">
+      <div class="right-panel__close">
+        <i class="fas fa-times js-close" data-close="right-panel"></i>
+      </div>
+      <ul class="list right-panel__menu">
+        <li class="active">Мои задачи</li>
+        <li>Мои Сообщения</li>
+        <li>Настройки</li>
+      </ul>
+      <div class="right-panel__content">
+        <p class="text font-PTSans">Здесь пока ничего нет</p>
+      </div>
     </div>
   </div>
 

@@ -29,4 +29,13 @@ $(function() {
 
     });
 
+    $(".js-close").on('click', function() {
+        let closeClass = '.' + $(this).attr('data-close');
+
+        if ($(closeClass).hasClass('active')) {
+            $(closeClass).removeClass('active');
+        }
+
+    });
+
 });
