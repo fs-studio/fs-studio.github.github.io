@@ -29,7 +29,18 @@
         <div class="right-menu__blocks">
           <div class="icon">
             <div class="icon__element">
-              <i class="fas fa-envelope icon_white"></i>
+              <i class="fas fa-envelope icon_white js-openClass" data-open="panel__mail-notifications"></i>
+            </div>
+            <div class="panel__mail-notifications">
+              <div class="mail-notifications__caption">
+                <p class="text font-Rubik">Недавние сообщения</p>
+              </div>
+              <div class="mail-notifications__messages">
+                <p class="text font-PTSans">Сообщений нет</p>
+              </div>
+              <div class="mail-notifications__all">
+                <a class="link font-Rubik">Смотреть все сообщения</a>
+              </div>
             </div>
           </div>
           <div class="icon">
@@ -44,7 +55,7 @@
           </div>
           <div class="element__avatar">
             <div class="avatar">
-              <div class="avatar__photo" id="click" data-open="panel-main__profile">
+              <div class="avatar__photo js-openClass" data-open="panel-main__profile">
                 <img src="images/avatar-1.jpg" class="image avatar_image" />
               </div>
             </div>

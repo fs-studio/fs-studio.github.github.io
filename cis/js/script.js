@@ -18,7 +18,7 @@ $(function() {
 
 $(function() {
 
-    $("#click").on('click', function() {
+    $(".js-openClass").on('click', function() {
         let openClass = '.' + $(this).attr('data-open');
 
         if (!$(openClass).hasClass('active')) {
