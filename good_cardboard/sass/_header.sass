@@ -1,0 +1,44 @@
+.header
+	margin-bottom: 15px
+	&-logo
+		background: url(../img/header-logo.png) center no-repeat
+		background-size: 100%
+		width: 191px
+		height: 61px
+	&-contacts
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		&__phone
+			font-size: 22px
+			margin-right: 13px
+			&s
+				display: flex
+			&:first-child
+				border-right: 1px solid #cfcfd0
+				padding-right: 13px
+		&__button
+			.fa-phone-volume
+				transform: rotate(-45deg)
+	&-menu
+		display: flex
+		justify-content: space-between
+		margin-bottom: 14px
+		padding:
+			top: 17px
+			bottom: 17px
+		background-color: #373737
+		padding-right: 10%
+		padding-left: 10%
+		a
+			color: $text-color-light
+			font-size: 12px
+			font-weight: 400
+			text-transform: uppercase
+			&:hover
+				color: $active-color
+		li
+			border-right: 1px dotted $text-color-light
+			padding-right: 1.5rem
+			&:last-child
+				border: none
