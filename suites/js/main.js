@@ -64,9 +64,8 @@ jQuery(document).ready(function($) {
 			}
 		})
 
-		$('body').on('click', '.js-menu-toggle', function(e) {
+		$('.js-menu-toggle').on('click', function() {
 			var $this = $(this);
-			e.preventDefault();
 
 			if ( $('body').hasClass('offcanvas-menu') ) {
 				$('body').removeClass('offcanvas-menu');
