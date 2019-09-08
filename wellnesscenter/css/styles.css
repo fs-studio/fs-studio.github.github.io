@@ -1640,7 +1640,7 @@ section {
     font-size: 18px;
   }
   .product-info .product-info-img img {
-    width: 82.5%;
+    width: auto;
   }
   /* 17. Tab Content (1200px)
   --------------------------------------------*/
@@ -1781,7 +1781,7 @@ section {
     text-align: center;
   }
   .img-responsive {
-    width: 100%;
+    width: auto;
   }
   /* 11. Header Full Screen Img (992px)
   --------------------------------------------*/
