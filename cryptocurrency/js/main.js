@@ -2,7 +2,7 @@
 ------------------------------------
 	Cryptocurrency - Landing Page Template
 	Version: 1.0
- ------------------------------------ 
+ ------------------------------------
  ====================================*/
 
 
@@ -13,7 +13,7 @@ $(window).on('load', function() {
 	/*------------------
 		Preloder
 	--------------------*/
-	$(".loader").fadeOut(); 
+	$(".loader").fadeOut();
 	$("#preloder").delay(400).fadeOut("slow");
 
 });
@@ -37,7 +37,7 @@ $(window).on('load', function() {
 		$(this).css('background-image', 'url(' + bg + ')');
 	});
 
-	
+
 	/*------------------
 		Review
 	--------------------*/
@@ -90,3 +90,17 @@ $(window).on('load', function() {
 
 })(jQuery);
 
+
+/* Modal window */
+
+$(function() {
+    $('.modal').on('click', function(e) {
+
+        if ($(e.target).attr('class') == $(this).attr('class')) {
+				    $(this).addClass('modal_hidden');
+				}
+
+		});
+});
+
+/* END--Modal window */
