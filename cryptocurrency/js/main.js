@@ -97,10 +97,10 @@ $(function() {
     $('.modal').on('click', function(e) {
 
         if ($(e.target).attr('class') == $(this).attr('class')) {
-				    $(this).addClass('modal_hidden');
-				}
+            $(this).addClass('modal_hidden');
+        }
 
-		});
+    });
 });
 
 /* END--Modal window */
