@@ -518,7 +518,7 @@ a {
           .page .services div ul li {
             text-align: center; } }
         .page .services div ul li a {
-          background: url(images/icons-sprite.png) no-repeat -219px -78px;
+          background: url(images/icons-sprite.png) no-repeat -219px -82px;
           line-height: 20px;
           padding-left: 24px;
           color: #e93478;
@@ -863,3 +863,11 @@ a {
   position: relative;
   top: -216px;
   visibility: hidden; }
+#team > h2 {
+  font-size: 34px;
+}
+@media screen and (max-width: 500px) {
+  #team > h2 {
+    font-size: 30px;
+  }
+}
