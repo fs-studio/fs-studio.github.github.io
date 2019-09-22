@@ -1290,6 +1290,7 @@ body.overlay .background-overlay
 	padding: 0;
 	margin-top: 16px;
 	margin-left: 78px;
+    min-height: 100px;
 }
 .features-list.big li h4
 {
