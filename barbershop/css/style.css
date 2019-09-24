@@ -27,11 +27,16 @@
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800&display=swap&subset=cyrillic');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap&subset=cyrillic');
-@import url(http://fonts.googleapis.com/css?family=Parisienne);
+/*@import url(http://fonts.googleapis.com/css?family=Parisienne);*/
+@font-face {
+  font-family: Lastochka;
+  src: local(lastochka), url(lastochka.ttf);
+}
 @import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic);
 @import url(http://fonts.googleapis.com/css?family=Anton);
 @import url('https://fonts.googleapis.com/css?family=Oswald:300,400,700&display=swap&subset=cyrillic');
 @import url(http://fonts.googleapis.com/css?family=Arvo);
+@import url(../css/BebasNeue/stylesheet.css);
 
 /* 1. Global Styles */
 
@@ -440,7 +445,7 @@ h1 {
 
 .h-page-title span.sub-title {
 	text-align:center;
-	font-family: 'Parisienne', cursive; 
+	font-family: 'Lastochka', cursive; 
 	font-size:20px;
 	line-height:20px;
 	font-weight:400;
@@ -1916,7 +1921,7 @@ article.bm-item h2.post-title {
 }
 
 .page_header h2 {
-	font-family: bebas-neue, sans-serif;
+	font-family: 'Bebas Neue', sans-serif;
 	color:#000;
 	text-transform:uppercase;
 	font-size:80px;
@@ -4145,7 +4150,7 @@ transform:translateY(-50%);
 
 
 #footer2 h3 {
-	font-family: bebas-neue, sans-serif;
+	font-family: 'Bebas Neue', sans-serif;
 	color:#fff;
 	padding:0 0 15px;
 	font-weight:300;
@@ -4988,7 +4993,7 @@ color:#B59E5C;
 }
 
 .awards-info h2 {
-	font-family:bebas-neue;
+	font-family: 'Bebas Neue';
 	font-size:40px;
 	text-transform:uppercase;
 	margin:25px 0 20px;
@@ -5014,7 +5019,7 @@ color:#B59E5C;
 }
 
 .top-info h2 {
-	font-family:bebas-neue;
+	font-family: 'Bebas Neue';
 	font-size:80px;
 	font-weight:300;
 	text-transform:uppercase;
@@ -5029,7 +5034,7 @@ color:#B59E5C;
 }
 
 h2.big-text {
-	font-family:bebas-neue;
+	font-family: 'Bebas Neue';
 	font-size:165px;
 	text-transform:uppercase;
 	margin:-100px 0;
@@ -5039,7 +5044,7 @@ h2.big-text {
 }
 
 h2.big-text.text-shadow {
-	font-family:bebas-neue;
+	font-family: 'Bebas Neue';
 	font-size:120px;
 	text-transform:uppercase;
 	margin:-60px auto;
@@ -5050,7 +5055,7 @@ h2.big-text.text-shadow {
 }
 
 #index2 .stats h1 {
-	font-family:bebas-neue;
+	font-family: 'Bebas Neue';
 }
 
 .h2-about {

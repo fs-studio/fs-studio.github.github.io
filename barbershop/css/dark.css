@@ -1,3 +1,5 @@
+@import url(../css/BebasNeue/stylesheet.css);
+
 #onepage .wrapper {
 	background: #222;
 }
@@ -292,8 +294,8 @@ h1 {
 
 .h-page-title span.sub-title {
 	text-align:center;
-	font-family: 'Parisienne', cursive; 
-	font-size:20px;
+	font-family: 'Lastochka', cursive; 
+	font-size:28px;
 	line-height:20px;
 	font-weight:400;
 	margin-bottom:13px;
@@ -457,6 +459,7 @@ h1 {
 	background:url(../images/home-page/1.jpg) no-repeat center center fixed;
 	display:table;
 	width:100%;
+  background-size: cover;
 }
 
 	
@@ -1766,7 +1769,7 @@ article.bm-item h2.post-title {
 }
 
 .page_header h2 {
-	font-family: bebas-neue, sans-serif;
+	font-family: 'Bebas Neue', sans-serif;
 	color:#000;
 	text-transform:uppercase;
 	font-size:80px;
@@ -3788,10 +3791,10 @@ transform:translateY(-50%);
 
 
 #footer2 h3 {
-	font-family: bebas-neue, sans-serif;
+	font-family: 'Bebas Neue', sans-serif;
 	color:#fff;
 	padding:0 0 15px;
-	font-weight:300;
+	font-weight: bold;
 }
 
 .f-news li {
