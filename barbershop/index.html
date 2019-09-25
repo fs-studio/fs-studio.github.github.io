@@ -682,7 +682,7 @@
 					<p>Подберите стрижку для себя и получите скидку 30% на первое посещение</p>
 					<form class="newsletter">
 						<input type="text" placeholder="Ваш Email..">
-						<button type="submit"><i class="fa fa-paper-plane"></i></button>
+						<button type="submit" id="mail"><i class="fa fa-paper-plane"></i></button>
 					</form>
 				</div>
 
@@ -865,22 +865,25 @@
 	<div class="contact-pop">
 		<div class="row">
 			<div class="col-md-6">
-				<div id="map-pop"></div>
+<!--				<div id="map-pop"></div>-->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2286.0316093532033!2d82.92415131606859!3d55.04266205400239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42dfe5c75f4c6147%3A0x5602a134730c208f!2z0YPQuy4g0JPQvtCz0L7Qu9GPLCAyNiwg0J3QvtCy0L7RgdC40LHQuNGA0YHQuiwg0J3QvtCy0L7RgdC40LHQuNGA0YHQutCw0Y8g0L7QsdC7LiwgNjMwMDkx!5e0!3m2!1sru!2sru!4v1569418031150!5m2!1sru!2sru" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 			</div>
 			<div class="col-md-6 pop-contact">
 				<ul class="contact-info">
 					<li>
-						<p><strong><i class="fa fa-map-marker"></i> Address:</strong> <span>No 123 , Wallstreet, Newyork NY123456</span></p>
+						<p><strong><i class="fa fa-map-marker"></i> Адрес:</strong> <span>ул. Гоголя, 26, Новосибирск, Россия</span></p>
 					</li>
 					<li>
-						<p><strong><i class="fa fa-envelope"></i> Mail Us:</strong> <span><a href="#">Support@website.com</a></span></p>
+						<p><strong><i class="fa fa-envelope"></i> Email:</strong> <span><a href="mailto:support@barbershop.ru">support@barbershop.ru</a></span></p>
 					</li>
 					<li>
-						<p><strong><i class="fa fa-phone"></i> Phone:</strong> <span>+91 1800 2345 2132</span></p>
+						<p><strong><i class="fa fa-phone"></i> Телефон:</strong> <span>+7 (383) 286-12-25</span></p>
 					</li>
+<!--
 					<li>
 						<p><strong><i class="fa fa-print"></i> Fax:</strong> <span>+91 2345 2132</span></p>
 					</li>
+-->
 				</ul>
 			</div>
 		</div>
@@ -916,13 +919,18 @@
 <script src="js/gmap.js"></script>
 <script src="js/gmap2.js"></script>
 
-<script>
-  $(function() {
-    $('.to-offer').click(function() {
-      $('#somedialog').show(300);
+  <script>
+    $(function() {
+			$('#mail').click(function() {
+				alert('Спасибо за подписку!');
+				window.location.href = '';
+			});
+      $('#submit').click(function() {
+				alert('Спасибо, Ваша заявка принята. Скоро с Вами свяжется наш администратор!');
+				window.location.href = '';
+			});
     });
-  });
-</script>
+  </script>
 
 </body>
 </html>
