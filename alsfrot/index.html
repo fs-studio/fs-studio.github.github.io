@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/fonts.css">
@@ -125,6 +126,88 @@
             </div>
         </section>
         
+<!--
+        <section class="cta">
+                <div class="cta-bg">
+                   <div class="container flex">
+                    <h3 class="cta-bg__title">Гарантия выкупа <span>автозапчастей</span></h3>
+                    <div class="cta-bg__text">Ваши инвестиции надежно застрахованы
+Мы гарантируем обратный выкуп автозапчастей
+Вашего магазина</div>
+                    <div class="cta-bg__call">Оставьте заявку прямо сейчас
+и получите франшизу со 100% гарантией</div>
+                    </div>
+                </div>
+                <div class="cta-form">
+                    <form>
+                        <input>
+                        <input>
+                        <input>
+                    </form>
+                </div>
+        </section>
+-->
+       <div class="banner">
+        <div class="thumb">
+            <div class="container content">
+                <div><p>БЕСПЛАТНАЯ замена масла и фильтров</p>
+(при покупке масла в магазинах АЛСФОРТ)
+<p>БЕСПЛАТНАЯ диагностика ходовой</p></div>
+            </div>
+        </div>
+        <div class="text">
+            <div class="modal-btn--callback wy--btn">Записаться на сервис</div>
+        </div>
+    </div>
+       
+       <style>
+           .banner {
+                position: relative;
+                display: flex;
+                flex-wrap: wrap;
+                height: 194px;
+                margin-top: 55px;
+            }
+           .banner > div:first-of-type {
+                flex: 0 0 50%;
+                background: url('banner-thumb.jpg') no-repeat -26px 0px;
+                background-size: cover;
+            }
+           .banner .container.content {
+                display: flex;
+                align-items: center;
+                position: absolute;
+                top: 0px;
+                transform: translateX(-50%);
+                left: 50%;
+                height: 100%;
+                color: #ffffff;
+                font-size: 22px;
+                line-height: 36px;
+            }
+           .banner .container.content p {
+                font-weight: 700;
+                margin-bottom: 0px;
+            }
+           .banner > div:last-of-type {
+                flex: 1;
+                display: flex;
+                align-items: center;
+                position: relative;
+                padding-left: 50px;
+                background: #73c400;
+            }
+           .banner > div:last-of-type:before {
+                content: '';
+                position: absolute;
+                left: -60px;
+                width: 100%;
+                height: 100%;
+                background: url(mask.svg) no-repeat 0px -9px;
+                /* z-index: 2000; */
+            }
+       </style>
+        
         <section class="privilege">
             <div class="container">
                 <h2 class="section-title">Преимущества открытия магазина <span>по франшизе</span></h2>
@@ -181,7 +264,7 @@
                     <div class="offer-content__block">
                         <div class="block-title">средний</div>
                         <div class="block-main">
-                            <div class="blur"></div>
+<!--                            <div class="blur"></div>-->
                             <div class="block-main__price1"><span>₽</span>350 000</div>
                             <div class="block-main__price2">от 6 млн руб.</div>
                             <div class="block-main__metr">от 80 кв. м</div>
@@ -204,6 +287,7 @@
         <section class="about">
             <div class="container">
                 <div class="section-title">Отзывы <span>наших франчайзи</span></div>
+                <i class="arrow left-arrow fas fa-chevron-left"></i>
                 <div class="about-slider">
                     <div class="about-slider__block">
                         <div class="block-name">Александр Колесников</div>
@@ -223,13 +307,16 @@
                         <div class="block-text">Гарантийные обязательства компании ALSFORT определяются в соответствующем пункте договора поставки или товарного чека, а также в соответствии с категорией товара</div>
                         <a href="#" class="block-more">Смотреть полностью</a>
                     </div>
+<!--
                     <div class="about-slider__block">
                         <div class="block-name">Александр Колесников</div>
                         <div class="block-city">г. Анапа</div>
                         <div class="block-text">Гарантийные обязательства компании ALSFORT определяются в соответствующем пункте договора поставки или товарного чека, а также в соответствии с категорией товара</div>
                         <a href="#" class="block-more">Смотреть полностью</a>
                     </div>
+-->
                 </div>
+                <i class="arrow right-arrow fas fa-chevron-right"></i>
             </div>
         </section>
     </main>

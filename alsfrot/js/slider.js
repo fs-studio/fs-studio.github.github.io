@@ -1,6 +1,9 @@
 $('.about-slider').slick({
   dots: true,
-  infinite: false,
+  arrows: true,
+  prevArrow: $('.left-arrow'),
+  nextArrow: $('.right-arrow'),
+  infinite: true,
   speed: 300,
   slidesToShow: 2,
   slidesToScroll: 1,
@@ -15,7 +18,7 @@ $('.about-slider').slick({
 //      }
 //    },
     {
-      breakpoint: 600,
+      breakpoint: 800,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1
