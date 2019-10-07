@@ -101,6 +101,10 @@ img {
     margin: 51px 0 79px;
 }
 
+.advantage-guarantees__example .guarantee:not(:last-child) {
+    margin-right: 30px;
+}
+
 .advantage-guarantees__example .guarantee-text {
     display: flex;
     justify-content: center;
@@ -294,6 +298,7 @@ img {
 }
 
 .offer-content__block {
+    width: 32%;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
     border: 1px solid #d2d2d2;
     transition: 0.5s;
@@ -303,51 +308,19 @@ img {
 .offer-content__block .block-title {
     color: #484848;
     font-size: 22px;
+    text-align: center;
     text-transform: uppercase;
-    padding: 21px 130px;
+    padding: 21px 0;
     background-color: #d3d5d7;
 }
 
 .offer-content__block .block-main {
-/*
-    background: #656669;
-    opacity: 0.6;
-*/
     background: rgb(101,102,105, 0.6);
-/*    filter: blur(1px);*/
     padding: 35px 39px 63px;
     position: relative;
     color: #fff;
     transition: background 0.3s;
 }
-
-/*
-.offer-content__block .block-main div {
-    border-bottom: #bcbcbc;
-    filter: blur(0);
-}*/
-
-/*
-.offer-content__block .block-main::before {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: #656669;
-    filter: blur(1px);
-    z-index: -1;
-    transition: 0.3s;
-}
-*/
-
-/*
-.offer-content__block .block-main:hover::before {
-    background-color: #2f323d;
-}
-*/
 
 .offer-content__block .block-main div {
     text-align: center;
@@ -392,27 +365,14 @@ img {
     text-align: center;
 }
 
-/*
-.blur {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: #656669;
-    filter: blur(1px);
-    z-index: -1;
-    transition: 0.3s;
-}
-*/
-
-.offer-content__block {
-  z-index: 1;
+.offer-content__block:not(:last-child) {
+    margin-right: 30px;
 }
 
 .offer-content__block:hover {
     transform: scale(1.05);
     z-index: 9;
+    border-color: transparent;
 }
 
 .offer-content__block:hover .block-main {
@@ -421,7 +381,6 @@ img {
 
 .offer-content__block:hover .block-title {
     color: #73c400;
-    font-size: 23px;
     background-color: #101010;
 }
 
@@ -512,9 +471,8 @@ img {
     background: url('../img/cta-bg.png') 0 0 no-repeat / cover;
     color: #fff;
     position: relative;
-    padding: 63px 0 67px;
+    padding: 63px 0 67px 20%;
     flex-basis: 50%;
-    padding-left: 20%;
 }
 
 .cta-bg::before {
@@ -569,15 +527,18 @@ img {
     padding-left: 40px;
     padding-top: 71px;
     position: relative;
+    z-index: 100;
 }
 
-.cta-form__bg {
+.cta-form::before {
+    content: '';
+    background: url('../img/cta-form-bg.png') no-repeat center;
     position: absolute;
+    left: -55%;
+    top: 0;
     width: 100%;
     height: 100%;
-    left: 0;
-    top: 0;
-    z-index: 100;
+    z-index: -1;
 }
 
 .cta-form__title {
@@ -621,16 +582,8 @@ img {
 }
 
 /*media*/
-@media screen and (max-width: 1850px) {
-    .offer-content__block:not(:last-child) {
-        margin-right: 30px;
-    }
-}
 
 @media screen and (max-width: 1800px) {
-    .advantage-guarantees__example .guarantee:not(:last-child) {
-        margin-right: 30px;
-    }
     .numbers-block:not(:last-child) {
         margin-right: 30px;
     }
@@ -638,15 +591,11 @@ img {
         padding: 6px 0;
         width: 200px;
     }
-    .offer-content__block {
-        width: 32%;
-    }
-    .offer-content__block .block-title {
-        padding: 21px 0;
-        text-align: center;
-    }
     .offer-content__block .block-main {
         padding: 25px;
+    }
+    .cta-form__form {
+        width: 50%;
     }
 }
 
@@ -662,6 +611,12 @@ img {
     }
 }
 
+@media screen and (max-width: 1600px) {
+    .cta-form::before {
+        left: -56%;
+    }
+}
+
 @media screen and (max-width: 1500px) {
     .advantage-guarantees__example .guarantee-text {
         height: 50px;
@@ -672,6 +627,15 @@ img {
     .block-main__button {
         padding: 10px 0;
         width: 75%;
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .cta-bg__title {
+        font-size: 23px;
+    }
+    .cta-bg__text {
+        font-size: 15px;
     }
 }
 
@@ -719,6 +683,12 @@ img {
     .block-main__button {
         margin: 30px auto 0;
     }
+    .cta-form__form {
+        width: 65%;
+    }
+    .cta-bg__text {
+        max-width: 75%;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -755,6 +725,24 @@ img {
     .right-arrow {
         right: 15%;
     }
+    .cta-bg {
+        padding: 50px 0 50px 20%;
+    }
+    .cta-form {
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .cta-bg__call {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1125px) {
+    .cta-form::before {
+        left: -59%;
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -782,6 +770,21 @@ img {
     }
     .arrow {
         top: 50%;
+    }
+    .cta {
+        flex-direction: column;
+    }
+    .cta-form {
+        text-align: center;
+        padding-bottom: 30px;
+        padding-left: 0;
+    }
+    .cta-form__form {
+        width: 35%;
+        margin: 0 auto;
+    }
+    .cta-form__form_submit {
+        margin: 0 auto;
     }
 }
 
@@ -818,7 +821,12 @@ img {
     .pack-row__block_text {
         max-width: 100%;
     }
-    
+    .cta {
+        padding: 0;
+    }
+    .cta-form__form {
+        width: 55%;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -847,11 +855,6 @@ img {
     .advantage-guarantees__example {
         flex-direction: column;
     }
-/*
-    .advantage-guarantees__example .guarantee:not(:last-child) {
-        margin-bottom: 50px;
-    }
-*/
     .number-blocks {
         flex-direction: column;
     }
@@ -865,14 +868,10 @@ img {
     .header-title {
         font-size: 23px;
     }
-}
-
-/*
-@media screen and (max-width: 450px) {
-    .advantage-guarantees__example .guarantee:not(:last-child) {
-        margin-bottom: 30px;
+    .cta-form__form {
+        width: 80%;
     }
-}*/
+}
 
 @media screen and (max-width: 400px) {
     .left-arrow {
@@ -880,5 +879,14 @@ img {
     }
     .right-arrow {
         right: 7%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .cta-form__form {
+        width: 90%;
+    }
+    .cta-form::before {
+        left: -60%;
     }
 }
