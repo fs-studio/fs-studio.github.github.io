@@ -124,7 +124,7 @@ img {
 
 .numbers {
     position: relative;
-    background: #191a1e url(../img/numbers-bg.png) 0 0 no-repeat / cover;
+    background: #191a1e url(../img/numbers-bg.png) 50% 0 no-repeat / cover;
     padding: 44px 0 57px;
 }
 
@@ -170,8 +170,10 @@ img {
     color: #ffffff;
     font-size: 18px;
     font-weight: 500;
-    padding: 6px 64px;
+/*    padding: 6px 64px;*/
     text-transform: uppercase;
+    width: 255px;
+    padding: 6px 0;
 }
 
 .pack {
@@ -199,9 +201,11 @@ img {
     padding: 39px 16px 21px;
 }
 
+/*
 .pack-row__block_text {
     max-width: 130px;
 }
+*/
 
 .pack-row__block_check {
     position: absolute;
@@ -558,6 +562,8 @@ img {
     font-size: 14px;
     margin-bottom: 15px;
     padding: 10px;
+    width: 344px;
+    height: 20px;
 }
 
 .cta-form__form_input:nth-child(2) {
@@ -569,20 +575,25 @@ img {
 }
 
 .cta-form__form_submit {
-    width: 50%;
+/*    width: 50%;*/
     background-color: #73c400;
     font-size: 14px;
     color: #fff;
     font-weight: 600;
     outline: none;
     border: none;
-    padding: 15px 0;
+/*    padding: 15px 0;*/
     cursor: pointer;
+    width: 174px;
+    height: 40px;
 }
 
 /*media*/
 
 @media screen and (max-width: 1800px) {
+    .numbers {
+        background: #191a1e url(../img/numbers-bg.png) 70% 0 no-repeat / cover;
+    }
     .numbers-block:not(:last-child) {
         margin-right: 30px;
     }
@@ -595,6 +606,12 @@ img {
     }
     .cta-form__form {
         width: 50%;
+    }
+}
+
+@media screen and (max-width: 1700px) {
+    .cta-bg {
+        background: url(../img/cta-bg.png) 100% 0 no-repeat / cover;
     }
 }
 
@@ -614,6 +631,13 @@ img {
     .cta-form::before {
         left: -56%;
     }
+    .privilege-content__block {
+        padding: 25px 0px;
+    }
+    .privilege-content__block_text {
+        font-size: 17px;
+        max-width: 100%;
+    }
 }
 
 @media screen and (max-width: 1500px) {
@@ -626,6 +650,9 @@ img {
     .block-main__button {
         padding: 10px 0;
         width: 75%;
+    }
+    .numbers {
+        background: #191a1e url(../img/numbers-bg.png) 75% 0 no-repeat / cover;
     }
 }
 
@@ -730,6 +757,9 @@ img {
     .cta-form {
         padding-top: 30px;
     }
+    .privilege-content__block_text {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 1150px) {
@@ -741,6 +771,15 @@ img {
 @media screen and (max-width: 1125px) {
     .cta-form::before {
         left: -59%;
+    }
+    .privilege-content__block_text {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1058px) {
+    .privilege-content__block_text {
+        font-size: 14px;
     }
 }
 
@@ -782,8 +821,17 @@ img {
         width: 35%;
         margin: 0 auto;
     }
+    .cta-form__form_input {
+        width: auto;
+    }
     .cta-form__form_submit {
         margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 988px) {
+    .privilege-content__block_text {
+        font-size: 13px;
     }
 }
 
@@ -806,6 +854,9 @@ img {
     }
     .privilege-content__block:nth-child(7) {
         border-left: none;
+    }
+    .privilege-content__block_text {
+        font-size: 18px;
     }
 }
 
@@ -848,12 +899,12 @@ img {
     .right-arrow {
         right: 11%;
     }
+    .privilege-content__block_text {
+        font-size: 16px;
+    }
 }
 
-@media screen and (max-width: 500px) {
-    .advantage-guarantees__example {
-        flex-direction: column;
-    }
+@media screen and (max-width: 600px) {
     .number-blocks {
         flex-direction: column;
     }
@@ -863,6 +914,12 @@ img {
     }
     .privilege-content__block:not(:last-child) {
         border-bottom: 1px dashed #bcbcbc;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .advantage-guarantees__example {
+        flex-direction: column;
     }
     .header-title {
         font-size: 23px;
