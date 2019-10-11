@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>Такой страницы не существует</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito|Source+Sans+Pro&display=swap" rel="stylesheet">
+
+  <style>
+
+  body {
+    margin:0;
+    position:relative;
+  }
+
+  .caption {
+    margin:0;
+  }
+
+  .error-page {
+    width:100%;
+    height:100vh;
+    display:flex;
+  }
+
+  .error-page__content {
+    height:100%;
+    flex-grow:1;
+    flex-basis:100px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+
+  .content-block {
+    display:flex;
+    flex-direction:column;
+    max-width:40rem;
+  }
+
+  .caption_h1 {
+    font-size:9em;
+    font-family:'Nunito', sans-serif;
+  }
+
+  .caption_h1::after {
+    content:'';
+    width:70px;
+    height:5px;
+    background:#798ce9;
+    border-radius:50px;
+    position:absolute;
+    display:block;
+  }
+
+  .text {
+    font-size:1.8em;
+    font-family:'Source Sans Pro', sans-serif;
+    color:#606f7b;
+    margin:0;
+    margin-bottom:15px;
+    padding:30px 0px;
+  }
+
+  .link {
+    text-decoration:none;
+    font-family:'Source Sans Pro', sans-serif;
+    font-size:100%;
+    text-transform:uppercase;
+    color:#3d4852;
+    border:2px solid #dae1e7;
+    border-radius:7px;
+    font-weight:700;
+    padding:10px;
+  }
+
+  .link:hover {
+    border-color:#b8c2cc;
+  }
+
+  .error-page__image {
+    background-image:url('404.svg');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    height:100%;
+    flex-grow:1;
+    flex-basis:100px;
+  }
+
+  @media screen and (max-width:1000px) {
+    .error-page {
+      flex-direction:column;
+    }
+
+    .content-block {
+      align-items:center;
+    }
+
+    .text {
+      font-size:1em;
+      padding:30px 30px;
+    }
+
+    .error-page__image {
+      display:none;
+    }
+  }
+  </style>
+</head>
+<body>
+
+  <div class="error-page">
+    <div class="error-page__content">
+      <div class="content-block">
+        <h1 class="caption caption_h1">404</h1>
+        <p class="text">
+          Извините, но такой страницы на нашем сайте нет.
+          Возможно, Вы ввели неправильный адрес или страница была удалена.
+        </p>
+        <div>
+          <a href="#" class="link">На главную</a>
+        </div>
+      </div>
+    </div>
+    <div class="error-page__image">
+
+    </div>
+  </div>
+
+</body>
+</html>
