@@ -214,11 +214,14 @@ img {
 
 .pack-row__block_check {
     position: absolute;
+/*
     font-size: 43px;
     color: #299e00;
+*/
     top: -25px;
     background: #fff;
-    width: 70px;
+/*    width: 70px;*/
+    padding: 0 20px;
 }
 
 .pack-row1 {
