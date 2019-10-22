@@ -47,7 +47,7 @@ body {
   background:#fc4600;
   font-size:1.1em;
   text-transform:uppercase;
-  padding:10px 15px;
+  padding:10px 20px;
   border-radius:5px;
   box-shadow:0px 8px 10px rgba(0,0,0,.6);
   transition:1s;
@@ -175,6 +175,7 @@ body {
 .icon {
   font-size:2em;
   color:var(--white);
+  padding-bottom:10px;
 }
 
 .text__element {
