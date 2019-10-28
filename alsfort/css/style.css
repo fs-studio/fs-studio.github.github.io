@@ -466,7 +466,15 @@ img {
 .about-slider__block .block-text {
     font-size: 14px;
     font-style: italic;
-    min-height: 93px;
+    height: 150px;
+    overflow-y: hidden;
+    transition: 5s;
+}
+
+.about-slider__block .block-text__open {
+    height: auto;
+    overflow-y: visible;
+    transition: 5s;
 }
 
 .about-slider__block .block-more {
