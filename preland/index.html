@@ -66,7 +66,27 @@
       <p class="text text__button">
         Только до конца ноября! Оставь заявку и получи сайт в подарок бесплатно!
       </p>
-      <a href="javascript:void(0);" class="link button button_ripple link__button">Получить сейчас</a>
+      <a href="javascript:void(0);" class="link button button_ripple link__button" id="openModal">Получить сейчас</a>
+    </div>
+  </div>
+
+  <div class="modal-window modal-window_disactive">
+    <div class="container container_modal">
+      <div class="modal-window__modal">
+        <div class="modal-window__image"></div>
+        <div class="modal-window__form">
+          <h1 class="caption caption_h1 caption__modal">Получить сайт бесплатно</h1>
+          <p class="text text__modal">
+            Только до конца ноября! Оставь заявку и получи сайт бесплатно!
+          </p>
+          <form class="form form__modal" method="post">
+            <input type="text" id="customerName" name="customerName" class="input input__name" placeholder="Ваше имя:">
+            <input type="tel" id="customerPhone" name="customerPhone" class="input input__phone" placeholder="Ваш телефон:">
+            <button class="button button_tap button__modal" id="sendOrder">Получить сайт!</button>
+            <a href="#" class="link link_black link__rules">Условия акции</a>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
 
