@@ -29,9 +29,13 @@ $(function() {
         if ($(e.target).attr("class") == $(this).attr("class")) {
             $(".modal-window").addClass("modal-window_disactive");
         } else {
-            console.log(e.target);
+            console.log("click");
         }
 
+    });
+
+    $(".modal-close__close").on("click", function() {
+        $(".modal-window").addClass("modal-window_disactive");
     });
 
     $(document).on("keydown", function(e) {

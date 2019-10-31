@@ -1,0 +1,35 @@
+<rss xmlns:yandex="http://news.yandex.ru" xmlns:media="http://search.yahoo.com/mrss/" xmlns:turbo="http://turbo.yandex.ru" version="2.0">
+    <channel>
+        <title></title>
+        <link>https://mst-krd.com/</link>
+        <description></description>
+        <item turbo="true">
+            <link>https://mst-krd.com/</link>
+            <author>mst-krd.com</author>
+            <category></category>
+            <turbo:content>
+                <![CDATA[
+                    <header>
+                        <h1></h1>
+                        <h2></h2>
+                        <figure>
+                            <img src="https://mst-krd.com/wp-content/themes/vekteh/img/main-bg.jpg">
+                        </figure>
+                    </header>
+                    <p></p>
+                    <p></p>
+                    <h2></h2>
+                    <figure>
+                        <img src="https://mst-krd.com/wp-content/themes/vekteh/img/main-bg3.jpg">
+                    </figure>
+                    <h3></h3>
+                    <h3></h3>
+                    <h3></h3>
+                    <h3></h3>
+                    <button formaction="tel:8 (800) 000-00-00" data-background-color="#ffb700" data-color="white" data-primary="true"></button>
+                    <p></p>
+                ]]>
+            </turbo:content>
+        </item>
+    </channel>
+</rss>
