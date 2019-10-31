@@ -27,7 +27,6 @@ $(function() {
 
         setTimeout(function() {
             $("#" + elementNumber).addClass("button-add_finished");
-            $("#" + elementNumber).removeClass("button_ripple");
         }, 300);
     });
 });
