@@ -110,11 +110,24 @@ body {
   border-color:var(--black);
 }
 
+.icon {
+  font-size:2em;
+  color:var(--white);
+  padding-bottom:10px;
+}
+
+.list {
+  margin:0;
+  padding:0;
+  font-size:1em;
+  font-family:var(--main-font);
+}
+
 .container {
   width:auto;
   min-height:100vh;
   height:auto;
-  padding:0% 25%;
+  padding:0% 20%;
   display:flex;
   flex-direction:column;
   align-items:center;
@@ -146,7 +159,7 @@ body {
   justify-content:center;
   min-height:300px;
   height:auto;
-  margin-top:100px;
+  margin-top:30px;
 }
 
 .caption-block {
@@ -180,15 +193,16 @@ body {
 .blocks {
   display:flex;
   width:100%;
-  margin-top:50px;
+  margin-top:100px;
 }
 
 .blocks__element {
   display:flex;
   flex-direction:column;
-  height:150px;
+  min-height:150px;
+  height:auto;
   width:33.3%;
-  text-align:center;
+  align-items:center;
   justify-content:center;
   border-right:1px solid rgba(255,255,255,.3);
 }
@@ -197,15 +211,86 @@ body {
   border-right:none;
 }
 
-.icon {
-  font-size:2em;
-  color:var(--white);
-  padding-bottom:10px;
+.icon__image {
+  font-size:3em;
+  padding:10px 0px;
 }
 
-.text__element {
-  font-size:1.4em;
-  font-weight:700;
+.element-list {
+  list-style-type:none;
+  margin:20px 0px;
+  padding:0;
+  text-align:center;
+}
+
+.list__li {
+  color:var(--white);
+  padding:5px 0px;
+  opacity:0.75;
+}
+
+.button-add {
+  border:none;
+  border-radius:5px;
+  cursor:pointer;
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  margin:0;
+  padding:10px 0px;
+  width:90%;
+  background:#fc4600;
+  font-size:1.1em;
+  text-transform:uppercase;
+  color:var(--white);
+  overflow:hidden;
+  outline:none;
+}
+
+.button-add:hover {
+  background:#e8561d;
+}
+
+.button-add__check {
+  display:none;
+}
+
+.icon__check {
+  padding:0;
+  font-size:1.1em;
+}
+
+.button-add_finished {
+  background:#e8561d;
+}
+
+.button-add_finished .button-add__text {
+  display:none;
+}
+
+.button-add_finished .button-add__check {
+  display:block !important;
+  animation:scale .5s linear;
+}
+
+@keyframes scale {
+  0% {
+    transform:scale(10);
+  }
+  50% {
+    transform:scale(0.2);
+  }
+  70% {
+    transform:scale(1.2);
+  }
+  90% {
+    transform:scale(0.7);
+  }
+  100% {
+    transform:scale(1);
+  }
 }
 
 @media screen and (max-width:1600px) {

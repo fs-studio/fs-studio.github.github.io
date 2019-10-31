@@ -15,6 +15,25 @@ $(function() {
 
 /* END--Button Ripple Effect */
 
+/* Button Add */
+
+$(".button-add").each(function(n) {
+    $(this).attr("id", "n-" + n);
+});
+
+$(function() {
+    $(".button-add").on("click", function() {
+        let elementNumber = $(this).attr("id");
+
+        setTimeout(function() {
+            $("#" + elementNumber).addClass("button-add_finished");
+            $("#" + elementNumber).removeClass("button_ripple");
+        }, 300);
+    });
+});
+
+/* END--Button Add */
+
 /* Modal Window */
 
 $(function() {
