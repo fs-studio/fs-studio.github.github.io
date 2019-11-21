@@ -55,3 +55,44 @@ cloudflare-app[app-id="a-better-browser"] cloudflare-app-close:hover {
   opacity: .9em;
   color: #fff;
 }
+/*-------------------------------------------------------------------*/
+.team {
+  background-image: url(../img/bg_3-1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  padding: 93px 0px 52px 0px;
+}
+
+.team-slide__text {
+  color: #333333;
+  background-color: #ffffff;
+  padding: 42px 59px 50px 40px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+  font-family: Montserrat, sans-serif;
+  width: 75%;
+  margin: 0 auto 20px;
+}
+
+.team-slide__img {
+  text-align: center;
+}
+
+.team-slide__img img {
+  display: block;
+  border-radius: 50%;
+  box-shadow: 0 0 2px 0 rgba(0,0,0,.1);
+  margin: 0 auto;
+}
+
+.team-slide__img_descr_name {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.team-slide__img_descr_position {
+  font-size: 1.125rem;
+}
