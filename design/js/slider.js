@@ -1,3 +1,3 @@
-$(function() {
-	$("#team-slider").owlCarousel();
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
 });
