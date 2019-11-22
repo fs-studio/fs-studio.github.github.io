@@ -1,5 +1,5 @@
 $(function() {
-  $(".owl-carousel").owlCarousel({
+  $(".owl-carousel1").owlCarousel({
   	items: 1
   });
 });

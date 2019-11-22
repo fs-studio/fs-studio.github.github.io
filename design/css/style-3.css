@@ -98,3 +98,22 @@ cloudflare-app[app-id="a-better-browser"] cloudflare-app-close:hover {
 .team-slide__img_descr_position {
   font-size: 1.125rem;
 }
+
+#masthead {
+  transition: 1s;
+}
+
+.menu_nofixed {
+  position: relative;
+  margin: 0;
+  width: 100%;
+}
+
+.menu_fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: 1px 1px 5px #777;
+  z-index: 10;
+}
