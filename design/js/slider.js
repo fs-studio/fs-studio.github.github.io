@@ -1,5 +1,8 @@
 $(function() {
-  $(".owl-carousel1").owlCarousel({
+  $("#team-slider").owlCarousel({
+  	items: 1
+  });
+  $("#bg-slider").owlCarousel({
   	items: 1
   });
 });
