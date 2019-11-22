@@ -117,3 +117,108 @@ cloudflare-app[app-id="a-better-browser"] cloudflare-app-close:hover {
   box-shadow: 1px 1px 5px #777;
   z-index: 10;
 }
+/*--------Контакты---------*/
+.design-contacts .design-element.design-element-62 {
+    background-image: url("../img/bg_contact_1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding: 90px 0px 90px 0px;
+}
+
+.design-contacts .design-element.design-element-62>.design-background-overlay {
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.design-contacts .design-element.design-element-63>.design-element-populated {
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+
+.design-contacts .design-element.design-element-63>.design-element-populated>.design-background-overlay {
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.design-contacts .design-element.design-element-64 .design-text-editor {
+    text-align: center;
+}
+
+.design-contacts .design-element.design-element-64 .design-widget-container {
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+
+.design-contacts .design-element.design-element-65 {
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    margin-top: 60px;
+    margin-bottom: 0px;
+}
+
+.design-contacts .design-element.design-element-65>.design-background-overlay {
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.design-contacts .design-element.design-element-66>.design-element-populated {
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+
+.design-contacts .design-element.design-element-66>.design-element-populated>.design-background-overlay {
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.design-contacts .design-element.design-element-67 .design-text-editor {
+    text-align: center;
+}
+
+.design-contacts .design-element.design-element-67 .design-widget-container {
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+
+.design-contacts .design-element.design-element-68>.design-container {
+    max-width: 825px;
+}
+
+.design-contacts .design-element.design-element-68 {
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.design-contacts .design-element.design-element-68>.design-background-overlay {
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.design-contacts .design-element.design-element-69>.design-element-populated {
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+
+.design-contacts .design-element.design-element-69>.design-element-populated>.design-background-overlay {
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.design-contacts .design-element.design-element-70 .design-widget-container {
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+
+.design-contacts .design-element.design-element-71 {
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+
+.design-contacts .design-element.design-element-71>.design-background-overlay {
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.design-contacts .design-element.design-element-72>.design-element-populated {
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+
+.design-contacts .design-element.design-element-72>.design-element-populated>.design-background-overlay {
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.design-contacts .design-element.design-element-73 .jet-map {
+    height: 440px;
+}
+
+.design-contacts .design-element.design-element-73 .design-widget-container {
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
