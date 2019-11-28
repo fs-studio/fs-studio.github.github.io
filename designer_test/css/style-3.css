@@ -1,0 +1,235 @@
+cloudflare-app[app-id="a-better-browser"] {
+  display: block;
+  background: #45484d;
+  color: #fff;
+  line-height: 1.45;
+  position: fixed;
+  z-index: 90000000;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: .5em 1em;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+cloudflare-app[app-id="a-better-browser"][data-visibility="hidden"] {
+  display: none;
+}
+
+cloudflare-app[app-id="a-better-browser"] cloudflare-app-message {
+  display: block;
+}
+
+cloudflare-app[app-id="a-better-browser"] a {
+  text-decoration: underline;
+  color: #ebebf4;
+}
+
+cloudflare-app[app-id="a-better-browser"] a:hover,
+cloudflare-app[app-id="a-better-browser"] a:active {
+  color: #dbdbeb;
+}
+
+cloudflare-app[app-id="a-better-browser"] cloudflare-app-close {
+  display: block;
+  cursor: pointer;
+  font-size: 1.5em;
+  position: absolute;
+  right: .4em;
+  top: .35em;
+  height: 1em;
+  width: 1em;
+  line-height: 1;
+}
+
+cloudflare-app[app-id="a-better-browser"] cloudflare-app-close:active {
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+}
+
+cloudflare-app[app-id="a-better-browser"] cloudflare-app-close:hover {
+  opacity: .9em;
+  color: #fff;
+}
+/*-------------------------------------------------------------------*/
+.team {
+  background-image: url(../img/bg_3-1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  padding: 93px 0px 52px 0px;
+}
+
+.team-slide__text {
+  color: #333333;
+  background-color: #ffffff;
+  padding: 42px 59px 50px 40px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+  font-family: Montserrat, sans-serif;
+  width: 75%;
+  margin: 0 auto 20px;
+}
+
+.team-slide__img {
+  text-align: center;
+}
+
+.team-slide__img img {
+  display: block;
+  width: auto !important;
+  max-width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 2px 0 rgba(0,0,0,.1);
+  margin: 0 auto;
+}
+
+.team-slide__img_descr_name {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.team-slide__img_descr_position {
+  font-size: 1.125rem;
+}
+
+#masthead {
+  transition: 1s;
+}
+
+.menu_nofixed {
+  position: relative;
+  margin: 0;
+  width: 100%;
+}
+
+.menu_fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: 1px 1px 5px #777;
+  z-index: 10;
+}
+/*--------Контакты---------*/
+.design-contacts .design-element.design-element-62 {
+    background-image: url("../img/bg_contact_1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding: 90px 0px 90px 0px;
+}
+
+.design-contacts .design-element.design-element-62>.design-background-overlay {
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.design-contacts .design-element.design-element-63>.design-element-populated {
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+
+.design-contacts .design-element.design-element-63>.design-element-populated>.design-background-overlay {
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.design-contacts .design-element.design-element-64 .design-text-editor {
+    text-align: center;
+}
+
+.design-contacts .design-element.design-element-64 .design-widget-container {
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+
+.design-contacts .design-element.design-element-65 {
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    margin-top: 60px;
+    margin-bottom: 0px;
+}
+
+.design-contacts .design-element.design-element-65>.design-background-overlay {
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.design-contacts .design-element.design-element-66>.design-element-populated {
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+
+.design-contacts .design-element.design-element-66>.design-element-populated>.design-background-overlay {
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.design-contacts .design-element.design-element-67 .design-text-editor {
+    text-align: center;
+}
+
+.design-contacts .design-element.design-element-67 .design-widget-container {
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+
+.design-contacts .design-element.design-element-68>.design-container {
+    max-width: 825px;
+}
+
+.design-contacts .design-element.design-element-68 {
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.design-contacts .design-element.design-element-68>.design-background-overlay {
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.design-contacts .design-element.design-element-69>.design-element-populated {
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+
+.design-contacts .design-element.design-element-69>.design-element-populated>.design-background-overlay {
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.design-contacts .design-element.design-element-70 .design-widget-container {
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+
+.design-contacts .design-element.design-element-71 {
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+
+.design-contacts .design-element.design-element-71>.design-background-overlay {
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.design-contacts .design-element.design-element-72>.design-element-populated {
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+
+.design-contacts .design-element.design-element-72>.design-element-populated>.design-background-overlay {
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.design-contacts .design-element.design-element-73 .jet-map {
+    height: 440px;
+}
+
+.design-contacts .design-element.design-element-73 .design-widget-container {
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+
+.overlay::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
