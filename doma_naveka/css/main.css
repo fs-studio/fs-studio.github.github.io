@@ -54,7 +54,7 @@ a {
 .header-logo {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  flex-basis: 46%;
 }
 
 .header-logo img {
@@ -70,6 +70,13 @@ a {
 
 .header-logo__title span {
   font-weight: 700;
+}
+
+.header-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: 54%;
 }
 
 .header-schedule {
@@ -95,9 +102,16 @@ a {
   height: 18px;
 }
 
+.header-info__cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .header-contact {
   line-height: 19px;
   text-align: center;
+  margin-right: 29px;
 }
 
 .header-contact__text {
