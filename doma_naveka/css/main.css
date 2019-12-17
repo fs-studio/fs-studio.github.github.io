@@ -72,6 +72,16 @@ button::-moz-focus-inner {
   box-sizing: border-box;
 }
 
+.section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.section-title {
+  font-size: 30px;
+  font-weight: 700;
+}
+
 .header {
   padding-top: 15px;
   padding-bottom: 15px;
