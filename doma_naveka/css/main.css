@@ -318,6 +318,10 @@ button::-moz-focus-inner {
   border: 2px solid #41596b;
 }
 
+.projects-block__content {
+  margin-bottom: 60px;
+}
+
 .tab-content__block-img {
   display: block;
 }
@@ -332,11 +336,58 @@ button::-moz-focus-inner {
 .tab-content__block-text_title {
   font-size: 20px;
   font-weight: 500;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .tab-content__block-text_descr {
   line-height: 30px;
+  margin-bottom: 25px;
+}
+
+.tab-content__block-text_btn {
+  width: 210px;
+  height: 60px;
+  border-radius: 5px;
+}
+
+.projects-block__content-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-block__content-nav .nav {
+  height: 20px;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.projects-block__content-nav .nav:hover {
+  transform: scale(1.2);
+}
+
+.projects-block__content-nav .nav-dots {
+  margin: 0 60px;
+  display: flex;
+}
+
+.projects-block__content-nav .nav-dots .active {
+  border: 3px solid #41596b;
+}
+
+.projects-block__content-nav .nav-dots__elem {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #41596b;
+  border-radius: 50%;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-color: transparent;
+  transition: 0.1s;
+}
+
+.projects-block__content-nav .nav-dots__elem:not(:last-child) {
+  margin-right: 20px;
 }
 
 /* -----media----- */
