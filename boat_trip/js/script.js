@@ -7,6 +7,11 @@ $(function() {
     $('.assortment-block_hidden').toggle(300);
     $(this).css('display', 'none');
   });
+
+  $('#submit').click(function() {
+    alert('Спасибо за заявку. Мы скоро Вам ответим!');
+    window.location.href = '';
+  });
   
   $('.modal-close').click(function() {
     $('.modal').hide(300);

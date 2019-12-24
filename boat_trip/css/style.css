@@ -33,6 +33,7 @@ a {
   color: #fff;
   font-family: 'Raleway', sans-serif;
   letter-spacing: 0.7px;
+  cursor: pointer;
 }
 
 .section-title {
