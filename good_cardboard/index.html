@@ -108,7 +108,7 @@
 								<!-- /.form-title -->
 								<form action="mailer/smart.php" method="post" class="form">
 									<input class="form-input" type="tel" name="user_phone" placeholder="Введите номер телефона">
-									<button class="button button_big" type="submit">Оставить заявку!</button>
+									<div class="button button_big">Оставить заявку</div>
 								</form>
 								<small class="form-small">*Минимальный заказ 500шт</small>
 							</div>
@@ -464,7 +464,7 @@
 		<!-- /.contacts -->
 
 		<footer class="footer">
-			<div>&copy;&nbsp;www.gofra-ural.ru 2016, все права защищены</div><br>
+			<div>&copy;&nbsp;2020 Все права защищены</div><br>
 			<div class="author">Разработка сайта: <a href="https://fsmalcompany.ru/" target="_blank">Веб-студия F&amp;S</a></div>
 		</footer>
 
@@ -476,13 +476,18 @@
 		<script>
 			
 			$(document).ready(function(){
-				$('.header-contacts__button').on('click', function(){
+				$('.header-contacts__button, .products-block__button + .button').on('click', function(){
 					$('.overlay').show();
 				});
 			});
 			
 			$('.popup-close').on('click', function(){
 				$('.overlay').hide();
+			});
+
+			$('.popup-form__btn, .offer-form__button, .button_big').on('click', function() {
+				alert('Спасибо за заявку. Скоро с Вами свяжется наш специалист');
+				window.location.href = '';
 			});
 			
 		</script>
