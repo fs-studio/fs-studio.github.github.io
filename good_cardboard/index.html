@@ -39,14 +39,14 @@
 			<nav>
 				<ul class="header-menu hiden-mobile">
 					<li><a href="#numbers">о компании</a></li>
-					<li><a href="#features">преимущества</a></li>
-					<li><a href="#">производство</a></li>
-					<li><a href="#">склад</a></li>
+					<!-- <li><a href="#features">преимущества</a></li> -->
+					<!-- <li><a href="#">производство</a></li> -->
+					<!-- <li><a href="#">склад</a></li> -->
 					<li><a href="#products">продукция</a></li>
 					<li><a href="#clients">наши клиенты</a></li>
-					<li><a href="#">сертификаты</a></li>
-					<li><a href="#">отзывы</a></li>
-					<li><a href="#">контакты</a></li>
+					<!-- <li><a href="#">сертификаты</a></li> -->
+					<!-- <li><a href="#">отзывы</a></!-->
+					<li><a href="#contacts">контакты</a></li>
 				</ul>
 			</nav>
 			<div class="container">
@@ -60,8 +60,8 @@
 					<div class="col-9 col-md-8">
 						<div class="header-contacts">
 							<div class="header-contacts__phones">
-								<div class="header-contacts__phone">8 (347) 271-54-28</div>
-								<div class="header-contacts__phone">8 (937) 363-30-00</div>
+								<div class="header-contacts__phone"><a href="tel:83472715428">8 (347) 271-54-28</a></div>
+								<div class="header-contacts__phone"><a href="tel:89373633000">8 (937) 363-30-00</a></div>
 							</div>
 							<!-- /.header-contacts__phones -->
 							<button onclick="yaCounter49467556.reachGoal('topBtn'); return true;" class="header-contacts__button button">
@@ -430,7 +430,7 @@
 		</div>
 		<!-- /.overlay -->
 		
-		<section class="contacts">
+		<section class="contacts" id="contacts">
 			<div id="map" class="map"></div>
 			<div class="contacts-block">
 				<div class="contacts-block__address contacts-block__text">
@@ -469,7 +469,7 @@
 		</footer>
 
 		<!-- Placed at the end of the document so the pages load faster -->
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/jquery-3.2.1.slim.min.js"><\/script>')</script>
 		<script type="text/javascript" src="slick/slick.min.js"></script>
 		
@@ -485,6 +485,14 @@
 				$('.overlay').hide();
 			});
 			
+		</script>
+		
+		<script>
+			$("a[href^='#']").click(function() {
+      			var _href = $(this).attr("href");
+      			$("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+      			return false;
+    		});
 		</script>
 		
 		<script src="js/wow.min.js"></script>
