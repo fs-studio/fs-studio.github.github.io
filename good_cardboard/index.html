@@ -22,6 +22,10 @@
 		<!-- Slick Slider -->
 		<link rel="stylesheet" href="slick/slick.css">
 		<link rel="stylesheet" href="slick/slick-theme.css">
+		
+        <!-- Owl Carousel -->
+        <link rel="stylesheet" href="owl/owl.carousel.min.css">
+        <link rel="stylesheet" href="owl/owl.theme.default.css">
 
 		<!-- Custom styles for this template -->
 		<link href="css/style.css" rel="stylesheet">
@@ -329,6 +333,25 @@
 		</section>
 		<!-- /.offer -->
 		
+		<section class="production container">
+		    <div class="production-slider owl-carousel owl-theme">
+		      <img src="img/slider/slide1.jpg" alt="" class="production-slide">
+		      <img src="img/slider/slide2.jpg" alt="" class="production-slide">
+		      <img src="img/slider/slide3.jpg" alt="" class="production-slide">
+		      <img src="img/slider/slide4.jpg" alt="" class="production-slide">
+		      <img src="img/slider/slide5.jpg" alt="" class="production-slide">
+		      <img src="img/slider/slide6.jpg" alt="" class="production-slide">
+		    </div>
+		    <div class="production-text">
+		      <h2 class="production-text__title">Производство</h2>
+		      <div class="production-text__descr">
+		        <p>Современное оборудование позволяет производить до 5 миллионов квадратных метров гофрокартона ежемесячно. Гофрокороба и лотки производятся по ГОСТу или чертежам заказчика.</p>
+		        <p>Досконально прорабатываем конструкции коро- бов и составы сырья, учитывая условия хранения, транспортировки и производства вашей продукции.</p>
+		        <p>Возможно нанесение цветной флексопечати на поверхность коробов.</p>
+		      </div>
+		    </div>
+		</section>
+		
 		<section class="clients" id="clients">
 			<div class="container">
 				<h2 class="section-title">Наши клиенты</h2>
@@ -505,5 +528,15 @@
 			new WOW().init();
 		</script>
 		<script src="js/maps.js"></script>
+		
+		<script src="owl/owl.carousel.min.js"></script>
+		<script>
+          $(function() {
+            $('.production-slider').owlCarousel({
+              items: 1,
+              loop: true
+            });
+          });
+        </script>
 	</body>
 </html>
