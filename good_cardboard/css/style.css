@@ -1160,7 +1160,7 @@ p {
     height: 300px;
   }
   .overlay .popup {
-    top: 25px;
+    top: 25%;
     width: 400px;
   }
   .overlay .popup-title {
