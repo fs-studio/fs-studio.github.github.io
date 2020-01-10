@@ -1,17 +1,4 @@
-/* .owl-stage-outer { 
-  overflow: visible !important;
-  }
-  
-   .owl-item {
-     opacity: 0;
-     transition: opacity 500ms;
-  }
-  .owl-item.active {
-    opacity: 1;
-  } */
-
 body {
-  /* overflow-x: hidden; */
   margin: 0;
   color: #284157;
   font-family: Geometria, Arial, sans-serif;
@@ -333,6 +320,10 @@ button::-moz-focus-inner {
 
 .projects-block__content {
   margin-bottom: 60px;
+}
+
+.tab-content__block {
+  width: calc(100% - 1px);
 }
 
 .tab-content__block-img {
