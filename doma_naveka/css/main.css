@@ -19,6 +19,12 @@ ul {
 
 a {
   text-decoration: none;
+  color: #284157;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #fb2b2b;
 }
 
 img {
@@ -52,6 +58,10 @@ button::-moz-focus-inner {
   font-size: 13px;
   font-weight: 700;
   transition: all 0.3s;
+}
+
+.btn:hover {
+  color: #fff;
 }
 
 .gradient-hover {
@@ -116,24 +126,24 @@ button::-moz-focus-inner {
   align-items: center;
 }
 
-.header-logo {
+.logo {
   display: flex;
   align-items: center;
   flex-basis: 46%;
 }
 
-.header-logo img {
+.logo img {
   margin-right: 20px;
 }
 
-.header-logo__title {
+.logo__title {
   color: #284157;
   text-transform: uppercase;
   font-size: 16px;
   letter-spacing: 0.16px;
 }
 
-.header-logo__title span {
+.logo__title span {
   font-weight: 700;
 }
 
@@ -185,15 +195,9 @@ button::-moz-focus-inner {
 }
 
 .header-contact__tel {
-  color: #284157;
   font-size: 15px;
   font-weight: 700;
   letter-spacing: 0.15px;
-  transition: all 0.3s;
-}
-
-.header-contact__tel:hover {
-  color: #fb2b2b;
 }
 
 .header-contact__btn {
@@ -577,6 +581,59 @@ p.development-feedback__descr {
 
 .deadline-wrap__block-text-descr {
   font-size: 14px;
+}
+
+.consultation {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.consultation-wrap {
+  width: 83%;
+  margin: 0 auto;
+}
+
+.consultation-wrap__title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 39px;
+}
+
+.consultation-wrap__descr {
+  font-size: 16px;
+  margin-bottom: 47px;
+}
+
+.consultation-wrap__form {
+  margin-bottom: 49px;
+}
+
+.consultation-wrap__small {
+  font-size: 14px;
+}
+
+.consultation-wrap__small a {
+  font-weight: 700;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.footer .copyright {
+  display: block;
+  width: 30px;
+  height: 30px;
+  filter: grayscale(1);
+  transition: 0.3s;
+}
+
+.footer .copyright:hover {
+  filter: grayscale(0);
 }
 
 /* -----media----- */
