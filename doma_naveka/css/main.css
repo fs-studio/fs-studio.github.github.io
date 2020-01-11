@@ -303,9 +303,18 @@ button::-moz-focus-inner {
 }
 
 .projects-block_tabs .tab-link {
+  padding: 9px 12px;
   font-size: 18px;
   font-weight: 500;
   text-transform: uppercase;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.projects-block_tabs .tab-link:hover {
+  border-color: #dcdcdc;
 }
 
 .projects-block_tabs .tab-link:not(:last-child) {
@@ -313,12 +322,28 @@ button::-moz-focus-inner {
 }
 
 .projects-block_tabs .tab-link__active {
-  padding: 9px 12px;
-  border-radius: 5px;
   border: 2px solid #41596b;
 }
 
+.projects-block_tabs .tab-link__active:hover {
+  border-color: #41596b;
+}
+
 .projects-block__content {
+  /* margin-bottom: 60px; */
+}
+
+.tab-content {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.tab-content__active {
+  position: static;
+}
+
+.tab-content__slider {
   margin-bottom: 60px;
 }
 
