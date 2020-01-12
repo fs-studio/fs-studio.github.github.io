@@ -3,7 +3,15 @@ let tabContentActive = $('#tab-content-slider-0').owlCarousel({
     dotsContainer: '.nav-dots-0',
     dotClass: 'nav-dots__elem',
     loop: true,
-    smartSpeed: 1000
+    smartSpeed: 1000,
+    responsive: {
+        1900: {
+            items: 3
+        },
+        1500: {
+            items: 2
+        }
+    }
 });
 
 $('.nav-prev0').click(function() {
@@ -20,7 +28,15 @@ $('#tab-content-slider-1').owlCarousel({
     dotsContainer: '.nav-dots-1',
     dotClass: 'nav-dots__elem',
     loop: true,
-    smartSpeed: 1000
+    smartSpeed: 1000,
+    responsive: {
+        1900: {
+            items: 3
+        },
+        1500: {
+            items: 2
+        }
+    }
 });
 
 $('#tab-content-slider-2').owlCarousel({
@@ -28,7 +44,15 @@ $('#tab-content-slider-2').owlCarousel({
     dotsContainer: '.nav-dots-2',
     dotClass: 'nav-dots__elem',
     loop: true,
-    smartSpeed: 1000
+    smartSpeed: 1000,
+    responsive: {
+        1900: {
+            items: 3
+        },
+        1500: {
+            items: 2
+        }
+    }
 });
 
 $('.nav-prev1').click(function() {
