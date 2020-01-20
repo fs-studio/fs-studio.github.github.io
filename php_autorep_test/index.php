@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-  <title>Генератор прелендов</title>
+  <title></title>
 
   <link rel="preload" href="styles.css" as="style" />
 </head>
@@ -19,7 +19,7 @@
     <div class="container__menu">
       <div class="menu">
         <div class="menu__content">
-          <h1 class="caption caption_h1">Генерировать преленд</h1>
+          <h1 class="caption caption_h1">L</h1>
           <div class="menu__buttons">
             <a href="code/" class="buttons buttons__bttn">По коду</a>
             <a href="link/" class="buttons buttons__bttn">По ссылке (тест)</a>
