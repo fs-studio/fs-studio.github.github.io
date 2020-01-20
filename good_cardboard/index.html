@@ -14,7 +14,7 @@
 		<link href="css/bootstrap-grid.min.css" rel="stylesheet">
 		
 		<!-- Google Fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&amp;subset=cyrillic" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,500,400,700,900&amp;subset=cyrillic" rel="stylesheet">
 		
 		<!-- Анимация -->
 		<link rel="stylesheet" href="css/animate.css">
@@ -39,14 +39,10 @@
 			<nav>
 				<ul class="header-menu hiden-mobile">
 					<li><a href="#numbers">о компании</a></li>
-					<li><a href="#features">преимущества</a></li>
-					<li><a href="#">производство</a></li>
-					<li><a href="#">склад</a></li>
 					<li><a href="#products">продукция</a></li>
+				    <li><a href="#production">производство</a></li> 
 					<li><a href="#clients">наши клиенты</a></li>
-					<li><a href="#">сертификаты</a></li>
-					<li><a href="#">отзывы</a></li>
-					<li><a href="#">контакты</a></li>
+					<li><a href="#contacts">контакты</a></li>
 				</ul>
 			</nav>
 			<div class="container">
@@ -60,8 +56,8 @@
 					<div class="col-9 col-md-8">
 						<div class="header-contacts">
 							<div class="header-contacts__phones">
-								<div class="header-contacts__phone">8 (347) 271-54-28</div>
-								<div class="header-contacts__phone">8 (937) 363-30-00</div>
+								<div class="header-contacts__phone"><a href="tel:83472715428">8 (347) 271-54-28</a></div>
+								<div class="header-contacts__phone"><a href="tel:89373633000">8 (937) 363-30-00</a></div>
 							</div>
 							<!-- /.header-contacts__phones -->
 							<button onclick="yaCounter49467556.reachGoal('topBtn'); return true;" class="header-contacts__button button">
@@ -108,7 +104,7 @@
 								<!-- /.form-title -->
 								<form action="mailer/smart.php" method="post" class="form">
 									<input class="form-input" type="tel" name="user_phone" placeholder="Введите номер телефона">
-									<button class="button button_big" type="submit">Оставить заявку!</button>
+									<div class="button button_big">Оставить заявку</div>
 								</form>
 								<small class="form-small">*Минимальный заказ 500шт</small>
 							</div>
@@ -259,7 +255,7 @@
 							<img class="products-block__img" src="img/products/box-1.png" alt="Гофрокороб 4-х клапанный">
 							<div class="products-block__title">Гофрокороб 4-х клапанный</div>
 							<!-- /.products-block__title -->
-							<div class="products-block__buttons"><button class="button button-o products-block__button">Подробнее</button><button class="button">Получить расчет</button></div>
+							<div class="products-block__buttons"><button class="button button-o products-block__button" id="product1">Подробнее</button><button class="button">Получить расчет</button></div>
 							<!-- /.products-block__buttons -->
 						</div>
 						<!-- /.products-block -->
@@ -271,7 +267,7 @@
 							<img class="products-block__img" src="img/products/box-2.png" alt="Гофролоток">
 							<div class="products-block__title">Гофролоток</div>
 							<!-- /.products-block__title -->
-							<div class="products-block__buttons"><button class="button button-o products-block__button">Подробнее</button><button class="button">Получить расчет</button></div>
+							<div class="products-block__buttons"><button class="button button-o products-block__button" id="product2">Подробнее</button><button class="button">Получить расчет</button></div>
 							<!-- /.products-block__buttons -->
 						</div>
 						<!-- /.products-block -->
@@ -286,7 +282,7 @@
 							<img class="products-block__img" src="img/products/box-3.png" alt="Гофрокороб самосборный (сложная высечка)">
 							<div class="products-block__title">Гофрокороб самосборный</div>
 							<!-- /.products-block__title -->
-							<div class="products-block__buttons"><button class="button button-o products-block__button">Подробнее</button><button class="button">Получить расчет</button></div>
+							<div class="products-block__buttons"><button class="button button-o products-block__button" id="product3">Подробнее</button><button class="button">Получить расчет</button></div>
 							<!-- /.products-block__buttons -->
 						</div>
 						<!-- /.products-block -->
@@ -298,7 +294,7 @@
 							<img class="products-block__img" src="img/products/box-4.png" alt="Листовой гофрокартон">
 							<div class="products-block__title">Листовой гофрокартон</div>
 							<!-- /.products-block__title -->
-							<div class="products-block__buttons"><button class="button button-o products-block__button">Подробнее</button><button class="button">Получить расчет</button></div>
+							<div class="products-block__buttons"><button class="button button-o products-block__button" id="product4">Подробнее</button><button class="button">Получить расчет</button></div>
 							<!-- /.products-block__buttons -->
 						</div>
 						<!-- /.products-block -->
@@ -328,6 +324,35 @@
 			<!-- /.container -->
 		</section>
 		<!-- /.offer -->
+		
+		<section class="production container" id="production">
+            <div class="production-slider">
+              <div class="slider-for">
+                <img src="img/slider/slide1.jpg" alt="" class="production-slide">
+                <img src="img/slider/slide2.jpg" alt="" class="production-slide">
+                <img src="img/slider/slide3.jpg" alt="" class="production-slide">
+                <img src="img/slider/slide4.jpg" alt="" class="production-slide">
+                <img src="img/slider/slide5.jpg" alt="" class="production-slide">
+                <img src="img/slider/slide6.jpg" alt="" class="production-slide">
+              </div>
+              <div class="slider-nav">
+                <img src="img/slider/slide1.jpg" alt="" class="production-slide-mini">
+                <img src="img/slider/slide2.jpg" alt="" class="production-slide-mini">
+                <img src="img/slider/slide3.jpg" alt="" class="production-slide-mini">
+                <img src="img/slider/slide4.jpg" alt="" class="production-slide-mini">
+                <img src="img/slider/slide5.jpg" alt="" class="production-slide-mini">
+                <img src="img/slider/slide6.jpg" alt="" class="production-slide-mini">
+              </div>
+            </div>
+		    <div class="production-text">
+		      <h2 class="production-text__title">Производство</h2>
+		      <div class="production-text__descr">
+		        <p>Современное оборудование позволяет производить до 5 миллионов квадратных метров гофрокартона ежемесячно. Гофрокороба и лотки производятся по ГОСТу или чертежам заказчика.</p>
+		        <p>Досконально прорабатываем конструкции коро- бов и составы сырья, учитывая условия хранения, транспортировки и производства вашей продукции.</p>
+		        <p>Возможно нанесение цветной флексопечати на поверхность коробов.</p>
+		      </div>
+		    </div>
+		</section>
 		
 		<section class="clients" id="clients">
 			<div class="container">
@@ -430,7 +455,7 @@
 		</div>
 		<!-- /.overlay -->
 		
-		<section class="contacts">
+		<section class="contacts" id="contacts">
 			<div id="map" class="map"></div>
 			<div class="contacts-block">
 				<div class="contacts-block__address contacts-block__text">
@@ -449,7 +474,7 @@
 				</div>
 				<!-- /.contacts-block__phone -->
 				<div class="contacts-block__cta contacts-block__text">
-					<button class="button">Заказать звонок</button>
+					<button class="button contact-btn">Заказать звонок</button>
 				</div>
 				<!-- /.contacts-block__cta -->
 				<div class="contacts-block__mail contacts-block__text">
@@ -464,27 +489,378 @@
 		<!-- /.contacts -->
 
 		<footer class="footer">
-			<div>&copy;&nbsp;www.gofra-ural.ru 2016, все права защищены</div><br>
+			<div>&copy;&nbsp;2020 Все права защищены</div><br>
 			<div class="author">Разработка сайта: <a href="https://fsmalcompany.ru/" target="_blank">Веб-студия F&amp;S</a></div>
 		</footer>
+		
+        <!-- Modal -->
+        <div id="modal1">
+          <div class="iform_block_prod">
+            <div class="popup-close">×</div>
+            <div class="iform-prod__title">Гофрокороб 4-х клапанный</div>
+            <div class="iform-prod__text">
+
+              <img src="img/products/box-1.png" alt="Гофрокороб 4-х клапанный" style="float: left; margin: 0 20px 20px 0; width: 150px;">
+
+              <p><b>Гофрокороб 4-х клапанный</b> является самым распространённым и универсальным видом упаковки из гофрокартона, подходящим для хранения и транспортировки продукции. Гофрокороба такого типа бывают стандартными, без верхних клапанов, с перекрывающимися клапанами, короб в составе «крышка – дно». Короба подходят как для ручной сборки, так и для автоматических линий упаковки.
+              </p>
+              <p>
+                При заказе данного вида коробов важно указывать основные параметры: <br>длина (L) х ширина (В) х высота (H) внутренние размеры короба, указанные в миллиметрах.
+              </p>
+              <div style="clear:both;"></div>
+            </div>
+            <div class="why-we-info container flex">
+              <div class="blocks">
+                <div class="img flex">
+                  <img src="img/features/fetures-icon-1.png" alt="Производство">
+                </div>
+                <div class="info">
+                  <p class="htext">Собственное<br>производство</p>
+                </div>
+              </div>
+              <div class="blocks">
+                <div class="img flex">
+                  <img src="img/features/fetures-icon-3.png" alt="Стабильное качество">
+                </div>
+                <div class="info">
+                  <p class="htext">Стабильное качество по ГОСТу</p>
+                </div>
+              </div>
+              <div class="blocks">
+                <div class="img flex">
+                  <img src="img/features/fetures-icon-7.png" alt="Доставка по всей России">
+                </div>
+                <div class="info">
+                  <p class="htext">Доставка по всей России</p>
+                </div>
+              </div>
+              <div class="blocks">
+                <div class="img flex">
+                  <img src="img/features/fetures-icon-8.png" alt="Бесплатное создание образцов">
+                </div>
+                <div class="info">
+                  <p class="htext">Бесплатное создание образцов</p>
+                </div>
+              </div>
+              <div class="blocks">
+                <div class="img flex">
+                  <img src="img/features/fetures-icon-5.png" alt="Флексопечать">
+                </div>
+                <div class="info">
+                  <p class="htext">Нанесение флексопечати</p>
+                </div>
+              </div>
+              <div class="blocks">
+                <div class="img flex">
+                  <img src="img/features/fetures-icon-4.png" alt="Страховой запас">
+                </div>
+                <div class="info">
+                  <p class="htext">Страховой запас гофрокартона</p>
+                </div>
+              </div>
+            </div>
+            <div class="spec-form-b bg2">
+              <div class="container">
+                <p class="htext">Получите индивидуальное предложение</p>
+                <p class="phtext">на производство и поставку изделий</p>
+                <form class="flex main_form" action="#">
+                  <input name="name" class="inputname" id="name20" placeholder="Ваше имя">
+                  <input name="phone" class="inputphone1" id="phone20" placeholder="Введите номер телефона" type="tel">
+                  <div class="form_button button">Оставить заявку</div>
+                </form>
+                <p class="min-text">*Минимальный заказ 500шт</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div id="modal2">
+          <div class="iform_block_prod">
+            <div class="popup-close">×</div>
+            <div class="iform-prod__title">Гофролоток</div>
+            <div class="iform-prod__text">
+
+              <img src="img/products/box-2.png" alt="Гофролоток" style="float: left; margin: 0 20px 20px 0; width: 150px;">
+
+              <p><b>Гофролоток</b> - один самых распространённых видов самосборных коробов, который представляет собой поддон с небольшой высотой открытого типа, т.е. не имеющего крышки.
+              </p>
+              <p>
+                Благодаря высокой прочности данной упаковки продукция в гофролотках выдерживает большие нагрузки при штабелировании и ее можно перевозить на большие расстояния без потерь товарного вида. Продукцию в гофролотке удобно представлять в торговом зале для конечного потребителя. Основное распространение получили гофролотки овощные, под птицу, под рыбу, под кондитерские изделия.
+              </p>
+              <div style="clear:both;"></div>
+            </div>
+            <div class="why-we-info container flex">
+              <div class="blocks">
+                <div class="img flex">
+                  <img src="img/features/fetures-icon-1.png" alt="Производство">
+                </div>
+                <div class="info">
+                  <p class="htext">Собственное<br>производство</p>
+                </div>
+              </div>
+              <div class="blocks">
+                <div class="img flex">
+                  <img src="img/features/fetures-icon-3.png" alt="Стабильное качество">
+                </div>
+                <div class="info">
+                  <p class="htext">Стабильное качество по ГОСТу</p>
+                </div>
+              </div>
+              <div class="blocks">
+                <div class="img flex">
+                  <img src="img/features/fetures-icon-7.png" alt="Доставка по всей России">
+                </div>
+                <div class="info">
+                  <p class="htext">Доставка по всей России</p>
+                </div>
+              </div>
+              <div class="blocks">
+                <div class="img flex">
+                  <img src="img/features/fetures-icon-8.png" alt="Бесплатное создание образцов">
+                </div>
+                <div class="info">
+                  <p class="htext">Бесплатное создание образцов</p>
+                </div>
+              </div>
+              <div class="blocks">
+                <div class="img flex">
+                  <img src="img/features/fetures-icon-5.png" alt="Флексопечать">
+                </div>
+                <div class="info">
+                  <p class="htext">Нанесение флексопечати</p>
+                </div>
+              </div>
+              <div class="blocks">
+                <div class="img flex">
+                  <img src="img/features/fetures-icon-4.png" alt="Страховой запас">
+                </div>
+                <div class="info">
+                  <p class="htext">Страховой запас гофрокартона</p>
+                </div>
+              </div>
+            </div>
+            <div class="spec-form-b bg2">
+              <div class="container">
+                <p class="htext">Получите индивидуальное предложение</p>
+                <p class="phtext">на производство и поставку изделий</p>
+                <form class="flex main_form" action="#">
+                  <input name="name" class="inputname" id="name20" placeholder="Ваше имя">
+                  <input name="phone" class="inputphone1" id="phone20" placeholder="Введите номер телефона" type="tel">
+                  <div class="form_button button">Оставить заявку</div>
+                </form>
+                <p class="min-text">*Минимальный заказ 500шт</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div id="modal3">
+          <div class="iform_block_prod">
+            <div class="popup-close">×</div>
+            <div class="iform-prod__title">Гофрокороб самосборный</div>
+            <div class="iform-prod__text">
+
+              <img src="img/products/box-3.png" alt="Гофрокороб самосборный" style="float: left; margin: 0 20px 20px 0; width: 150px;">
+
+              <p><b>Гофрокороб самосборный</b> – вид упаковки из гофрокартона, который представляет собой высеченный по чертежу гофролист. При сборке таких коробов нет необходимости применять дополнительные материалы (как клей, скотч, скобы), что удобно для открывания-закрывания гофрокороба без потери внешнего вида упаковки из картона.
+              </p>
+              <p>
+                Распространённые типы самосборных коробов – короб с крышкой на фиксаторах, лотки с отрытым верхом, короба типа «телевизор», гофроподдоны, короба по типу «крышка - дно», телескопические короба, короба оберточного типа.
+              </p>
+              <div style="clear:both;"></div>
+            </div>
+            <div class="why-we-info container flex">
+              <div class="blocks">
+                <div class="img flex">
+                  <img src="img/features/fetures-icon-1.png" alt="Производство">
+                </div>
+                <div class="info">
+                  <p class="htext">Собственное<br>производство</p>
+                </div>
+              </div>
+              <div class="blocks">
+                <div class="img flex">
+                  <img src="img/features/fetures-icon-3.png" alt="Стабильное качество">
+                </div>
+                <div class="info">
+                  <p class="htext">Стабильное качество по ГОСТу</p>
+                </div>
+              </div>
+              <div class="blocks">
+                <div class="img flex">
+                  <img src="img/features/fetures-icon-7.png" alt="Доставка по всей России">
+                </div>
+                <div class="info">
+                  <p class="htext">Доставка по всей России</p>
+                </div>
+              </div>
+              <div class="blocks">
+                <div class="img flex">
+                  <img src="img/features/fetures-icon-8.png" alt="Бесплатное создание образцов">
+                </div>
+                <div class="info">
+                  <p class="htext">Бесплатное создание образцов</p>
+                </div>
+              </div>
+              <div class="blocks">
+                <div class="img flex">
+                  <img src="img/features/fetures-icon-5.png" alt="Флексопечать">
+                </div>
+                <div class="info">
+                  <p class="htext">Нанесение флексопечати</p>
+                </div>
+              </div>
+              <div class="blocks">
+                <div class="img flex">
+                  <img src="img/features/fetures-icon-4.png" alt="Страховой запас">
+                </div>
+                <div class="info">
+                  <p class="htext">Страховой запас гофрокартона</p>
+                </div>
+              </div>
+            </div>
+            <div class="spec-form-b bg2">
+              <div class="container">
+                <p class="htext">Получите индивидуальное предложение</p>
+                <p class="phtext">на производство и поставку изделий</p>
+                <form class="flex main_form" action="#">
+                  <input name="name" class="inputname" id="name20" placeholder="Ваше имя">
+                  <input name="phone" class="inputphone1" id="phone20" placeholder="Введите номер телефона" type="tel">
+                  <div class="form_button button">Оставить заявку</div>
+                </form>
+                <p class="min-text">*Минимальный заказ 500шт</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div id="modal4">
+          <div class="iform_block_prod">
+            <div class="popup-close">×</div>
+            <div class="iform-prod__title">Листовой гофрокартон</div>
+            <div class="iform-prod__text">
+
+              <img src="img/products/box-4.png" alt="Листовой гофрокартон" style="float: left; margin: 0 20px 20px 0; width: 150px;">
+
+              <p>Производство <b>листового гофрокартона</b> является основой производственного цикла в «Добрый картон», который в дальнейшем идет на переработку и выпуск изделий таких как гофрокороб, гофролоток, проктадка и т.д.
+              </p>
+              <p>
+                Мы предлагаем к продаже 3-х слойный листовой гофрокартон в листах марок Т21-Т27 профиль С (высота профиля 4 мм) бурого или белого цветов.
+              </p>
+              <div style="clear:both;"></div>
+            </div>
+            <div class="why-we-info container flex">
+              <div class="blocks">
+                <div class="img flex">
+                  <img src="img/features/fetures-icon-1.png" alt="Производство">
+                </div>
+                <div class="info">
+                  <p class="htext">Собственное<br>производство</p>
+                </div>
+              </div>
+              <div class="blocks">
+                <div class="img flex">
+                  <img src="img/features/fetures-icon-3.png" alt="Стабильное качество">
+                </div>
+                <div class="info">
+                  <p class="htext">Стабильное качество по ГОСТу</p>
+                </div>
+              </div>
+              <div class="blocks">
+                <div class="img flex">
+                  <img src="img/features/fetures-icon-7.png" alt="Доставка по всей России">
+                </div>
+                <div class="info">
+                  <p class="htext">Доставка по всей России</p>
+                </div>
+              </div>
+              <div class="blocks">
+                <div class="img flex">
+                  <img src="img/features/fetures-icon-8.png" alt="Бесплатное создание образцов">
+                </div>
+                <div class="info">
+                  <p class="htext">Бесплатное создание образцов</p>
+                </div>
+              </div>
+              <div class="blocks">
+                <div class="img flex">
+                  <img src="img/features/fetures-icon-5.png" alt="Флексопечать">
+                </div>
+                <div class="info">
+                  <p class="htext">Нанесение флексопечати</p>
+                </div>
+              </div>
+              <div class="blocks">
+                <div class="img flex">
+                  <img src="img/features/fetures-icon-4.png" alt="Страховой запас">
+                </div>
+                <div class="info">
+                  <p class="htext">Страховой запас гофрокартона</p>
+                </div>
+              </div>
+            </div>
+            <div class="spec-form-b bg2">
+              <div class="container">
+                <p class="htext">Получите индивидуальное предложение</p>
+                <p class="phtext">на производство и поставку изделий</p>
+                <form class="flex main_form" action="#">
+                  <input name="name" class="inputname" id="name20" placeholder="Ваше имя">
+                  <input name="phone" class="inputphone1" id="phone20" placeholder="Введите номер телефона" type="tel">
+                  <div class="form_button button">Оставить заявку</div>
+                </form>
+                <p class="min-text">*Минимальный заказ 500шт</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!----------------------------------------------->
 
 		<!-- Placed at the end of the document so the pages load faster -->
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/jquery-3.2.1.slim.min.js"><\/script>')</script>
 		<script type="text/javascript" src="slick/slick.min.js"></script>
 		
 		<script>
 			
 			$(document).ready(function(){
-				$('.header-contacts__button').on('click', function(){
+				$('.header-contacts__button, .products-block__button + .button, .contact-btn').on('click', function(){
 					$('.overlay').show();
 				});
 			});
 			
 			$('.popup-close').on('click', function(){
-				$('.overlay').hide();
+				$('.overlay, #modal1, #modal2, #modal3, #modal4').hide();
 			});
+
+			$('.popup-form__btn, .offer-form__button, .button_big, .form_button').on('click', function() {
+				alert('Спасибо за заявку. Скоро с Вами свяжется наш специалист');
+				window.location.href = '';
+			});
+          
+            $('#product1').click(function() {
+              $('#modal1').css('display', 'flex');
+            });
+          
+            $('#product2').click(function() {
+              $('#modal2').css('display', 'flex');
+            });
+          
+            $('#product3').click(function() {
+              $('#modal3').css('display', 'flex');
+            });
+          
+            $('#product4').click(function() {
+              $('#modal4').css('display', 'flex');
+            });
 			
+		</script>
+		
+		<script>
+			$("a[href^='#']").click(function() {
+      			var _href = $(this).attr("href");
+      			$("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+      			return false;
+    		});
 		</script>
 		
 		<script src="js/wow.min.js"></script>
@@ -492,5 +868,46 @@
 			new WOW().init();
 		</script>
 		<script src="js/maps.js"></script>
+		
+		<script>
+          $(function() {
+            $('.slider-for').slick({
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: false,
+              asNavFor: '.slider-nav',
+              infinite: true,
+              autoplay: true,
+              autoplaySpeed: 5000,
+              speed: 1000
+            });
+            $('.slider-nav').slick({
+              slidesToShow: 4,
+              slidesToScroll: 1,
+              asNavFor: '.slider-for',
+              infinite: true,
+              centerPadding: true,
+              autoplay: true,
+              autoplaySpeed: 5000,
+              focusOnSelect: true,
+              speed: 1000,
+              responsive: [
+                {
+                  breakpoint: 550,
+                  settings: {
+                    slidesToShow: 3
+                  }
+                },
+                {
+                  breakpoint: 400,
+                  settings: {
+                    slidesToShow: 2
+                  }
+                }
+              ]
+            });
+          });
+        </script>
+		
 	</body>
 </html>

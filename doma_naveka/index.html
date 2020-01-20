@@ -13,9 +13,9 @@
 </head>
 <body>
   <header class="header container">
-    <a href="index.html" class="header-logo">
+    <a href="index.html" class="logo">
       <img src="img/logo.png" alt="Дома навека">
-      <span class="header-logo__title"><span>дома</span>навека</span>
+      <span class="logo__title"><span>дома</span>навека</span>
     </a>
     <div class="header-info">
       <div class="header-schedule">
@@ -34,6 +34,7 @@
       </div>
     </div>
   </header>
+
   <main class="main">
     <div class="bg container">
       <div class="bg-text">
@@ -57,65 +58,363 @@
         </form>
       </div>
     </div>
-    <section class="projects section container">
+    
+    <!-- <section class="projects section container">
       <h2 class="section-title">У нас есть уже готовые проекты</h2>
       <div class="projects-block">
+
         <div class="projects-block_tabs">
-          <div class="tab-link tab-link__active" tab="1">Эконом</div>
-          <div class="tab-link" tab="2">Средний</div>
-          <div class="tab-link" tab="3">Премиум</div>
+          <div class="tab-link tab-link__active" tab="0">Эконом</div>
+          <div class="tab-link" tab="1">Средний</div>
+          <div class="tab-link" tab="2">Премиум</div>
         </div>
+
         <div class="projects-block__content">
-          <div class="owl-carousel owl-theme tab-content tab-content__active">
-            <div class="tab-content__block">
-              <img src="img/econom1.png" alt="Проект дома 1" class="tab-content__block-img">
-              <div class="tab-content__block-text">
-                <div class="tab-content__block-text_title">Проект Дома Навека 1</div>
-                <div class="tab-content__block-text_descr">Площадь: 102 м2<br>Размеры: 10х23х5</div>
-                <div class="tab-content__block-text_btn btn"><span class="gradient-hover"></span>Подробнее о проекте</div>
+          <div class="tab-content tab-content__active">
+            <div class="owl-carousel owl-theme tab-content__slider" id="tab-content-slider-0">
+              <div class="tab-content__block">
+                <img src="img/econom1.png" alt="Проект дома 1" class="tab-content__block-img">
+                <div class="tab-content__block-text">
+                  <div class="tab-content__block-text_title">Проект Дома Навека 1</div>
+                  <div class="tab-content__block-text_descr">Площадь: 102 м2<br>Размеры: 10х23х5</div>
+                  <div class="tab-content__block-text_btn btn"><span class="gradient-hover"></span>Подробнее о проекте</div>
+                </div>
+              </div>
+
+              <div class="tab-content__block">
+                <img src="img/econom1.png" alt="Проект дома 1" class="tab-content__block-img">
+                <div class="tab-content__block-text">
+                  <div class="tab-content__block-text_title">Проект Дома Навека 2</div>
+                  <div class="tab-content__block-text_descr">Площадь: 102 м2<br>Размеры: 10х23х5</div>
+                  <div class="tab-content__block-text_btn btn"><span class="gradient-hover"></span>Подробнее о проекте</div>
+                </div>
+              </div>
+
+              <div class="tab-content__block">
+                <img src="img/econom1.png" alt="Проект дома 1" class="tab-content__block-img">
+                <div class="tab-content__block-text">
+                  <div class="tab-content__block-text_title">Проект Дома Навека 3</div>
+                  <div class="tab-content__block-text_descr">Площадь: 102 м2<br>Размеры: 10х23х5</div>
+                  <div class="tab-content__block-text_btn btn"><span class="gradient-hover"></span>Подробнее о проекте</div>
+                </div>
+              </div>
+
+              <div class="tab-content__block">
+                <img src="img/econom1.png" alt="Проект дома 1" class="tab-content__block-img">
+                <div class="tab-content__block-text">
+                  <div class="tab-content__block-text_title">Проект Дома Навека 4</div>
+                  <div class="tab-content__block-text_descr">Площадь: 102 м2<br>Размеры: 10х23х5</div>
+                  <div class="tab-content__block-text_btn btn"><span class="gradient-hover"></span>Подробнее о проекте</div>
+                </div>
               </div>
             </div>
-            <div class="tab-content__block">
-              <img src="img/econom1.png" alt="Проект дома 1" class="tab-content__block-img">
-              <div class="tab-content__block-text">
-                <div class="tab-content__block-text_title">Проект Дома Навека 2</div>
-                <div class="tab-content__block-text_descr">Площадь: 102 м2<br>Размеры: 10х23х5</div>
-                <div class="tab-content__block-text_btn btn"><span class="gradient-hover"></span>Подробнее о проекте</div>
+
+            <div class="projects-block__content-nav">
+              <img src="img/left-arrow.svg" class="nav nav-prev0">
+              <div class="nav-dots nav-dots-0">
               </div>
-            </div>
-            <div class="tab-content__block">
-              <img src="img/econom1.png" alt="Проект дома 1" class="tab-content__block-img">
-              <div class="tab-content__block-text">
-                <div class="tab-content__block-text_title">Проект Дома Навека 3</div>
-                <div class="tab-content__block-text_descr">Площадь: 102 м2<br>Размеры: 10х23х5</div>
-                <div class="tab-content__block-text_btn btn"><span class="gradient-hover"></span>Подробнее о проекте</div>
-              </div>
-            </div>
-            <div class="tab-content__block">
-              <img src="img/econom1.png" alt="Проект дома 1" class="tab-content__block-img">
-              <div class="tab-content__block-text">
-                <div class="tab-content__block-text_title">Проект Дома Навека 4</div>
-                <div class="tab-content__block-text_descr">Площадь: 102 м2<br>Размеры: 10х23х5</div>
-                <div class="tab-content__block-text_btn btn"><span class="gradient-hover"></span>Подробнее о проекте</div>
-              </div>
+              <img src="img/right-arrow.svg" class="nav nav-next0">
             </div>
           </div>
-          <!-- <div class="tab-content"></div>
-          <div class="tab-content"></div> -->
-        </div>
-        <div class="projects-block__content-nav">
-          <img src="img/left-arrow.svg" class="nav nav-prev">
-          <div class="nav-dots">
-            <!-- <div class="nav-dots__elem"></div>
-            <div class="nav-dots__elem"></div> -->
+
+          <div class="tab-content">
+            <div class="owl-carousel owl-theme tab-content__slider" id="tab-content-slider-1">
+              <div class="tab-content__block">
+                <img src="img/econom1.png" alt="Проект дома 1" class="tab-content__block-img">
+                <div class="tab-content__block-text">
+                  <div class="tab-content__block-text_title">Второй слайд</div>
+                  <div class="tab-content__block-text_descr">Площадь: 102 м2<br>Размеры: 10х23х5</div>
+                  <div class="tab-content__block-text_btn btn"><span class="gradient-hover"></span>Подробнее о проекте</div>
+                </div>
+              </div>
+              <div class="tab-content__block">
+                <img src="img/econom1.png" alt="Проект дома 1" class="tab-content__block-img">
+                <div class="tab-content__block-text">
+                  <div class="tab-content__block-text_title">Второй слайд</div>
+                  <div class="tab-content__block-text_descr">Площадь: 102 м2<br>Размеры: 10х23х5</div>
+                  <div class="tab-content__block-text_btn btn"><span class="gradient-hover"></span>Подробнее о проекте</div>
+                </div>
+              </div>
+              <div class="tab-content__block">
+                <img src="img/econom1.png" alt="Проект дома 1" class="tab-content__block-img">
+                <div class="tab-content__block-text">
+                  <div class="tab-content__block-text_title">Второй слайд</div>
+                  <div class="tab-content__block-text_descr">Площадь: 102 м2<br>Размеры: 10х23х5</div>
+                  <div class="tab-content__block-text_btn btn"><span class="gradient-hover"></span>Подробнее о проекте</div>
+                </div>
+              </div>
+              <div class="tab-content__block">
+                <img src="img/econom1.png" alt="Проект дома 1" class="tab-content__block-img">
+                <div class="tab-content__block-text">
+                  <div class="tab-content__block-text_title">Второй слайд</div>
+                  <div class="tab-content__block-text_descr">Площадь: 102 м2<br>Размеры: 10х23х5</div>
+                  <div class="tab-content__block-text_btn btn"><span class="gradient-hover"></span>Подробнее о проекте</div>
+                </div>
+              </div>
+            </div>
+            <div class="projects-block__content-nav">
+              <img src="img/left-arrow.svg" class="nav nav-prev1">
+              <div class="nav-dots nav-dots-1">
+              </div>
+              <img src="img/right-arrow.svg" class="nav nav-next1">
+            </div>
           </div>
-          <img src="img/right-arrow.svg" class="nav nav-next">
+
+          <div class="tab-content">
+            <div class="owl-carousel owl-theme tab-content__slider" id="tab-content-slider-2">
+              <div class="tab-content__block">
+                <img src="img/econom1.png" alt="Проект дома 1" class="tab-content__block-img">
+                <div class="tab-content__block-text">
+                  <div class="tab-content__block-text_title">Третий слайд</div>
+                  <div class="tab-content__block-text_descr">Площадь: 102 м2<br>Размеры: 10х23х5</div>
+                  <div class="tab-content__block-text_btn btn"><span class="gradient-hover"></span>Подробнее о проекте</div>
+                </div>
+              </div>
+              <div class="tab-content__block">
+                <img src="img/econom1.png" alt="Проект дома 1" class="tab-content__block-img">
+                <div class="tab-content__block-text">
+                  <div class="tab-content__block-text_title">Третий слайд</div>
+                  <div class="tab-content__block-text_descr">Площадь: 102 м2<br>Размеры: 10х23х5</div>
+                  <div class="tab-content__block-text_btn btn"><span class="gradient-hover"></span>Подробнее о проекте</div>
+                </div>
+              </div>
+              <div class="tab-content__block">
+                <img src="img/econom1.png" alt="Проект дома 1" class="tab-content__block-img">
+                <div class="tab-content__block-text">
+                  <div class="tab-content__block-text_title">Третий слайд</div>
+                  <div class="tab-content__block-text_descr">Площадь: 102 м2<br>Размеры: 10х23х5</div>
+                  <div class="tab-content__block-text_btn btn"><span class="gradient-hover"></span>Подробнее о проекте</div>
+                </div>
+              </div>
+              <div class="tab-content__block">
+                <img src="img/econom1.png" alt="Проект дома 1" class="tab-content__block-img">
+                <div class="tab-content__block-text">
+                  <div class="tab-content__block-text_title">Третий слайд</div>
+                  <div class="tab-content__block-text_descr">Площадь: 102 м2<br>Размеры: 10х23х5</div>
+                  <div class="tab-content__block-text_btn btn"><span class="gradient-hover"></span>Подробнее о проекте</div>
+                </div>
+              </div>
+            </div>
+            <div class="projects-block__content-nav">
+              <img src="img/left-arrow.svg" class="nav nav-prev2">
+              <div class="nav-dots nav-dots-2">
+              </div>
+              <img src="img/right-arrow.svg" class="nav nav-next2">
+            </div>
+          </div>
         </div>
       </div>
     </section>
+
+    <section class="development section container">
+      <h2 class="section-title">Мы построим Вам дом по индивидуальному плану,<br>разработанному в нашем проектном бюро</h2>
+      <p>За 19 лет мы разработали более 500 индивидуальных проектов</p>
+
+      <div class="development-slider-0">
+
+      </div>
+
+      <p>Мы разрабатываем оригинальные, конструктивно сложные проекты и реализуем их</p>
+
+      <div class="development-slider-1">
+
+      </div>
+
+      <div class="development-feedback">
+        <div class="development-feedback__title">Мы готовы разработать для Вас индивидуальный проект дома по Вашим пожеланиям<br>Либо использовать для строительства Ваш собственный проект</div>
+        <p class="development-feedback__descr">Заполните форму ниже - мы свяжемся с Вами для обсуждения деталей проекта</p>
+        <form action="" class="development-feedback__form">
+          <input type="text" class="form-input development-feedback__form-input" placeholder="Ваше имя" required>
+          <input type="tel" class="form-input development-feedback__form-input" placeholder="Ваше телефон" required>
+          <button type="submit" class="btn development-feedback__form-btn">Заказать<br>обратный звонок</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="guarantees section container">
+      <h2 class="section-title">Гарантия 20 лет на качество строительства дома<br>прописана в договоре</h2>
+      <div class="guarantees-subtitle">Мы контролируем процесс строительства на каждом этапе<br>от его начала до момента сдачи объекта заказчику</div>
+      <div class="guarantees-house">
+        <div class="guarantees-house__pointer">
+          <div class="guarantees-house__pointer-text">Утепление потолка</div>
+          <div class="guarantees-house__pointer-line"></div>
+          <img src="img/house-circle.png" alt="" class="guarantees-house__pointer-circle">
+        </div>
+
+        <div class="guarantees-house__pointer">
+          <div class="guarantees-house__pointer-text">Дверной проем</div>
+          <div class="guarantees-house__pointer-line"></div>
+          <img src="img/house-circle.png" alt="" class="guarantees-house__pointer-circle">
+        </div>
+
+        <div class="guarantees-house__pointer">
+          <div class="guarantees-house__pointer-text">Утепление пола</div>
+          <div class="guarantees-house__pointer-line"></div>
+          <img src="img/house-circle.png" alt="" class="guarantees-house__pointer-circle">
+        </div>
+
+        <div class="guarantees-house__pointer">
+          <div class="guarantees-house__pointer-text">Фундамент</div>
+          <div class="guarantees-house__pointer-line"></div>
+          <img src="img/house-circle.png" alt="" class="guarantees-house__pointer-circle">
+        </div>
+
+        <div class="guarantees-house__pointer">
+          <img src="img/house-circle.png" alt="" class="guarantees-house__pointer-circle">
+          <div class="guarantees-house__pointer-line"></div>
+          <div class="guarantees-house__pointer-text">Дымоход</div>
+        </div>
+
+        <div class="guarantees-house__pointer">
+          <img src="img/house-circle.png" alt="" class="guarantees-house__pointer-circle">
+          <div class="guarantees-house__pointer-line"></div>
+          <div class="guarantees-house__pointer-text">Кровля</div>
+        </div>
+
+        <div class="guarantees-house__pointer">
+          <img src="img/house-circle.png" alt="" class="guarantees-house__pointer-circle">
+          <div class="guarantees-house__pointer-line"></div>
+          <div class="guarantees-house__pointer-text">Оконный проем</div>
+        </div>
+
+        <div class="guarantees-house__pointer">
+          <img src="img/house-circle.png" alt="" class="guarantees-house__pointer-circle">
+          <div class="guarantees-house__pointer-line"></div>
+          <div class="guarantees-house__pointer-text">Оконный проем</div>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="material section container">
+      <h2 class="section-title">Мы построим для Вас дом<br>из выбранного Вами материала</h2>
+      <div class="material-types">
+        <div class="material-types__block">
+          <img class="material-types__block-img" src="img/material-1.jpg" alt="Из бетона">
+          <div class="material-types__block-title">Из бетона</div>
+          <a href="" class="material-types__block-more">Подробнее</a>
+        </div>
+        <div class="material-types__block">
+          <img class="material-types__block-img" src="img/material-2.jpg" alt="Из кирпича">
+          <div class="material-types__block-title">Из кирпича</div>
+          <a href="" class="material-types__block-more">Подробнее</a>
+        </div>
+        <div class="material-types__block">
+          <img class="material-types__block-img" src="img/material-3.jpg" alt="Из поризованных блоков">
+          <div class="material-types__block-title">Из поризованных блоков</div>
+          <a href="" class="material-types__block-more">Подробнее</a>
+        </div>
+        <div class="material-types__block">
+          <img class="material-types__block-img" src="img/material-4.jpg" alt="Из пеноблоков">
+          <div class="material-types__block-title">Из пеноблоков</div>
+          <a href="" class="material-types__block-more">Подробнее</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="deadline section container">
+      <h2 class="section-title">Мы всегда укладываемся в сроки,<br>прописанные в договоре на строительство</h2>
+      <div class="deadline-wrap">
+        <div class="deadline-wrap__block">
+          <img src="img/deadline-1.png" alt="Современная техника и инструмент" class="deadline-wrap__block-img">
+          <div class="deadline-wrap__block-text">
+            <div class="deadline-wrap__block-text-title">Мы используем современную технику и инструмент при производстве работ
+              </div>
+            <div class="deadline-wrap__block-text-descr">Это в разы сокращает сроки строительства</div>
+          </div>
+        </div>
+
+        <div class="deadline-wrap__block">
+          <img src="img/deadline-2.png" alt="7 бригад опытных специалистов" class="deadline-wrap__block-img">
+          <div class="deadline-wrap__block-text">
+            <div class="deadline-wrap__block-text-title">У нас в штате 7 бригад опытных специалистов своего дела</div>
+            <div class="deadline-wrap__block-text-descr">Мы имеем конкурентное преимущество в качестве выполняемых работ</div>
+          </div>
+        </div>
+
+        <div class="deadline-wrap__block">
+          <img src="img/deadline-3.png" alt="Отдел технического контроля" class="deadline-wrap__block-img">
+          <div class="deadline-wrap__block-text">
+            <div class="deadline-wrap__block-text-title">Отдел технического контроля нашей компании проверяет каждый этап строительства</div>
+            <div class="deadline-wrap__block-text-descr">Это позволяет исключить производственный брак на каждом этапе строительства</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="education section container">
+      <h2 class="section-title">Все сотрудники в нашем штате<br>имеют высшее инженерно-строительное образование</h2>
+      <div class="education-wrap">
+        <video src="" class="education-wrap__video"></video>
+        <div class="education-wrap__text">
+          <div class="education-wrap__text-top">
+            <div>Евтушенко Дмитрий</div>
+            <div>Генеральный директор<br>ООО "Дома Навека"</div>
+          </div>
+          <div class="education-wrap__text-bottom">
+            <div>Вы можете напрямую связаться 
+              с директором по телефону:
+              </div>
+            <a href=""></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="consultation section container">
+      <div class="consultation-wrap">
+        <div class="consultation-wrap__title">Вы не нашли ответа на свой вопрос? Наши специалисты дадут<br>Вам профессиональную консультацию абсолютно бесплатно!</div>
+        <div class="consultation-wrap__descr">Для этого оставьте свой номер телефона в форме ниже - мы перезвоним Вам в течение 3 минут</div>
+        <form action="" class="consultation-wrap__form development-feedback__form">
+          <input type="text" class="form-input development-feedback__form-input" placeholder="Ваше имя" required>
+          <input type="tel" class="form-input development-feedback__form-input" placeholder="Ваше телефон" required>
+          <button type="submit" class="btn development-feedback__form-btn">Получить бесплатную<br>консультацию</button>
+        </form>
+        <div class="consultation-wrap__small">Или Вы можете перезвонить нам сами по телефону: <a href="tel:+74952042376">+7 (495) 204-23-76</a></div>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <div class="contacts-map"></div>
+      <div class="contacts-text">
+        <div class="contacts-text__title">Мы можем показать Вам<br>еще больше проектов у нас в офисе!</div>
+        <div class="contacts-text__descr">
+          <div class="contacts-text__descr-title">Приезжайте к нам в гости по адресу:</div>
+          <div class="contacts-text__descr-text">
+            <div class="contacts-text__descr-text-block">
+              <div class="contacts-text__descr-text-block_icon"></div>
+              <div class="contacts-text__descr-text-block_descr">МКАД 51 км. ТВК “Элит Строй Материалы” павильон L23  
+                </div>
+            </div>
+            <div class="contacts-text__descr-text-block">
+              <div class="contacts-text__descr-text-block_icon"></div>
+              <div class="contacts-text__descr-text-block_descr">Звоните прямо сейчас:
+                +7 (495) 204-23-76  
+                </div>
+            </div>
+            <div class="contacts-text__descr-text-block">
+              <div class="contacts-text__descr-text-block_icon"></div>
+              <div class="contacts-text__descr-text-block_descr">с 9:00 до 21:00  
+                без выходных  
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
   </main>
+
+  <footer class="footer container">
+    <a href="index.html" class="logo">
+      <img src="img/logo.png" alt="Дома навека">
+      <span class="logo__title"><span>дома</span>навека</span>
+    </a>
+    <!-- <a href="https://fsmalcompany.ru/" target="_blank">
+      <img src="https://fsmalcompany.ru/images/logo.png" alt="Digital-агенство F&S" title="Digital-агенство F&S" class="copyright">
+    </a> -->
+  </footer>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="owl/owl.carousel.min.js"></script>
   <script src="js/slider.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
