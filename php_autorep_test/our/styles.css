@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Bahianita|Ubuntu&display=swap');
+
+body {
+  width:100%;
+  margin:0;
+}
+
+.caption {
+  margin:0;
+  text-align:center;
+}
+
+.background {
+  position:absolute;
+  width:100%;
+  height:100%;
+  background-image:url('background.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+.background__screen {
+  width:100%;
+  height:100%;
+  background:#000;
+  opacity:0.5;
+}
+
+.gen {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  width:500px;
+  height:auto;
+  padding:20px;
+  box-shadow:0px 0px 1px #fff;
+  border-radius:10px;
+  background:url('back.png') repeat;
+}
+
+.gen_h1 {
+  font-size:1.7em;
+  height:30px;
+  font-family: 'Bahianita', cursive;
+}
+
+.gen__form {
+  background:#f3f3f3;
+  width:480px;
+  height:auto;
+  margin-top:10px;
+  padding:10px 10px 40px 10px;
+  border-radius:10px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size:1em;
+}
+
+.preland__link {
+  width:100%;
+  margin:20px 0px;
+}
+
+#js-prelandUrl {
+  outline:none !important;
+  padding:2%;
+  border:1px solid #121212;
+  transition:1s;
+}
+
+#js-prelandUrl:hover, #js-prelandUrl:focus {
+  border-color:#eab92d;
+}
+
+.button {
+  text-decoration:none;
+  color:#333;
+  font-size:1.1em;
+  background:#d0d0d0;
+  padding:15px 30px;
+  border:1px solid #d0d0d0;
+  box-shadow:0px 0px 20px #d0d0d0;
+  transition:1s;
+}
+
+.button:hover {
+  color:#000;
+  background:transparent;
+  box-shadow:none;
+}

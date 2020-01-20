@@ -1,0 +1,6 @@
+<?php 
+    return [
+        'refresh_url'   => '../0000_script_back/back_vitrina_old.js',
+        'norefresh_url' => '../0000_script_back/back_vitrina_new.js',
+    ];
+?>

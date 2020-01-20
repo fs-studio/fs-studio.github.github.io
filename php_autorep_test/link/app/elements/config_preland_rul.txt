@@ -1,0 +1,9 @@
+<?php
+    return [
+        'refresh_url'   => '../0000_script_back/back_rul_old.js',
+        'norefresh_url' => '../0000_script_back/back_rul_new.js',
+		'data' => [
+			'url_ruletka' => '//medic-informator-с.ru/0005_all_ruletka/ruletka_{{RUL}}_free'
+		]
+    ];
+?>

@@ -1,0 +1,94 @@
+<?php include_once("../../protracker/track.php"); ?>
+||||||||||||||||
+<?=trackerGetBody()?>
+||||||||||||||||
+<link href="..//jsdguifgwsiugiqdgqweifgdqwdqfd.css" type="text/css" rel="stylesheet">
+<script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="..//sagihhsoghoaghouagiopafioagiiag0000.js"></script>
+||||||||||||||||
+<div style="position:absolute;display:none;"></div>
+<div class="eeee"></div>
+||||||||||||||||
+<div id="hiddenDiv" style="display:none;"></div>
+<div style="display:none" class="fadepopup">
+    <div id="kmacb-form" class="modalx kmacb-form kmacb-form2 eoxp">
+        <div class="modal-block">
+            <div class="oui">
+                <div class="ouimain">
+                    <p class="ouimainp">Вы из г.<span class="geocity"><?=trackerGetCity();?></span>? Подождите!</p>
+                    <div class="ouimain-text-img">
+                        <div class="ouimain-img">
+                            <img src="tov.png">
+                        </div>
+                        <div class="ouimain-text">
+                            <p>Для Вас сейчас действует специальное ограниченное предложение</p>
+                            <p>
+                                Только до <script>d=new Date();p=new Date(d.getTime()+(86400*1000*1));monthA="января,февраля,марта,апреля,мая,июня,июля,августа,сентября,октября,ноября,декабря".split(",");document.write(p.getDate()+" "+monthA[p.getMonth()]+" "+p.getFullYear()) + " г.";</script> вы можете получить {{OFFER}} по акции!
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <a href="<?php echo trackerGetUrl(); ?>" style="display: block;"><input type="button" value="Узнать подробнее"></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="eeee"></div>
+||||||||||||||||
+<script>
+configUrl = JSON.parse('<?=json_encode(include './config_preland.php'); ?>')
+</script>
+<script src="../platform.js" type="text/javascript"></script>
+<script src="../change-script.js" type="text/javascript"></script>
+||||||||||||||||
+<script>
+configUrl = JSON.parse('<?=json_encode(include './config_preland_rul.php'); ?>')
+</script>
+<script src="../platform.js" type="text/javascript"></script>
+<script src="../change-script.js" type="text/javascript"></script>
+||||||||||||||||
+<link rel="stylesheet" href="../ruletka_php/styles.css">
+||||||||||||||||
+<script src="../ruletka_php/script.js"></script>
+||||||||||||||||
+<div class="ruletka-p" id="roulette">
+  <h2>ВНИМАНИЕ! Остерегайтесь подделок!</h2>
+  <div>{{OFFER}} в г. <?=trackerGetCity();?> и на территории России можно приобрести БЕСПЛАТНО только <a href="#roulette" class="ruletka-a">приняв участие в розыгрыше скидки до 100%</a></div>
+</div>
+
+<div class="spin-wrapper">
+  <p class="ruletka-p">Испытай удачу!<br>Нажми на колесо! Попробуй получить скидку на наше средство или вовсе забрать его <span class="danger-text">даром со скидкой в 100%</span>!</p>
+  <div class="wheel-wrapper">
+    <div class="wheel">
+      <img alt="" class="wheel-img" src="../ruletka_php/prizewheel.png">
+      <div class="wheel-cursor">
+        <img alt="" src="../ruletka_php/wheel-cursor.png"><span class="cursor-text lt48" onclick="spin();">КРУТИ</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="order_block">
+  <div><img src="tov.png"></div>
+  <h3>Все что Вам нужно — это ввести имя и номер телефона.<br>Поторопитесь! У Вас осталось времени:<br><span class="time_remains" id="min">10</span> : <span class="time_remains" id="sec">00</span></h3>
+  <form id="omni_form" method="get" action="../ruletka_php/omni/send.php">
+    <input type="text" class="input-roulette" name="fio" placeholder="Ваше имя" required>
+    <input type="text" class="input-roulette" name="phone" placeholder="Ваш телефон" required>
+    <input type="hidden" name="pbid" value="<?=$_GET['vcode'];?>">
+    <input type="hidden" name="traffic_flow_id" value="ID_ПОТОКА">
+    <input type="hidden" name="product_id" value="ID_ОФФЕРА">
+    <input type="hidden" name="price" value="1290 || 1590">
+    <input type="submit" class="submit-roulette" value="Получить бесплатно">
+  </form>
+  </div>
+  <div class="spin-result-wrapper">
+    <div class="pop-up-window">
+      <div class="close-popup"></div>
+      <span class="pop-up-heading">Поздравляем!</span>
+      <p class="ruletka-p pop-up-text">Вы можете забрать средство <span class="danger-text">БЕСПЛАТНО</span></p>
+      <a class="pop-up-button" href="#roulette">OK</a>
+    </div>
+  </div>

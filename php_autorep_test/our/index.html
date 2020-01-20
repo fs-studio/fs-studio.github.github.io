@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Скопировать код преленда</title>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+
+</head>
+<body>
+  <div class="background"><div class="background__screen"></div></div>
+  <div class="gen">
+    <h1 class="caption gen_h1">Генератор прелендов</h1>
+    <form class="gen__form" id="js-form">
+      <div class="preland__link">
+        Наименование преленда: <input type="text" id="js-prelandUrl" placeholder="Пример: t228_ru_slim_tonusfit_rul">
+      </div>
+      <br>
+      Замена оффера:<br>
+      <input type="text" id="js-prelandOldName"> на <input type="text" id="js-prelandNewName">
+      <br>
+      <hr>
+      Рулетка на преленде (тест):
+      <input type="checkbox" id="js-rulInPreland">
+      <br>
+      Выбор ПП:
+      <select id="js-prelandRul">
+        <option value="omnicpa"> Omnicpa
+      </select>
+      <hr>
+      <br>
+      Выбор рулетки:<br>
+      <select id="js-ruletka">
+        <option value="no" />Без рулетки
+        <option value="alcolock" />Alcolock
+        <option value="alfaslim" />Alfaslim
+        <option value="amulet" />Amulet
+        <option value="articulat" />Articulat
+        <option value="artrodex" />Artrodex
+        <option value="eczolocin" />Eczolocin
+        <option value="gepario" />Gepario
+        <option value="giperium" />Giperium
+        <option value="ketler" />Ketler
+        <option value="klubnica" />Klubnica
+        <option value="maxpotencial" />Maxpotencial
+        <option value="micoderm" />Micoderm
+        <option value="micolock" />Micolock
+        <option value="nefrodelin" />Nefrodelin
+        <option value="neirobiotic" />Neirobiotic
+        <option value="neirosistem" />Neirosistem
+        <option value="neo" />Neo
+        <option value="nicoprost" />Nicoprost
+        <option value="orlit" />Orlit
+        <option value="orlium" />Orlium
+        <option value="phytolife" />Phytolife
+        <option value="slimfit" />Slimfit
+        <option value="sustafast" />Sustafast
+        <option value="sustavix" />Sustavix
+        <option value="tonusfit" />Tonusfit
+        <option value="toximin" />Toximin
+        <option value="venorem" />Venorem
+        <option value="voloxin" />Voloxin
+      </select>
+      <br>
+      <br>
+      <br>
+      <center><a href="#" id="js-bttn" class="button">Получить код</a></center>
+    </form>
+  </div>
+  <div class="prelandCode" style="display:none;">
+    <a href="#" id="js-back">Сгенерировать другой преленд</a>
+    <div id="js-preland"></div>
+  </div>
+
+  <script type="text/javascript">
+      var link = new URL(window.location.href);
+      var bg = link.searchParams.get("chromosomes");
+
+      $(function() {
+          $(document).on('click', '#js-bttn', function() {
+              var prelandUrl = $('#js-prelandUrl').val();
+              var ruletka = $('#js-ruletka').val();
+              var offers = [$('#js-prelandOldName').val(), $('#js-prelandNewName').val()];
+              var rulInPreland = $("#js-rulInPreland").is(":checked") ? true : false;
+              var prelandRul = $('#js-prelandRul').val();
+              $('.background').css("display", "none");
+              $('.gen').css("display", "none");
+              $('.prelandCode').css("display", "block");
+              $.post("session.php", { preland: prelandUrl, ruletka: ruletka, offers: offers, rulInPreland: rulInPreland, prelandRul: prelandRul }, function(data) {
+                  //$('#js-preland').html(data);
+                  window.location.href="script.php";
+              });
+          });
+
+          $(document).on('click', '#js-back', function() {
+              $(".prelandCode").css("display", "none");
+              $('#js-prelandUrl').val('');
+              $('.background').css("display", "block");
+              $(".gen").css("display", "block");
+          });
+
+          if (bg == '47') {
+              $('.background').css("background-image", "url('Ari.jpg')");
+          }
+      });
+  </script>
+</body>
+</html>
